@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 02 Oct 2017 07:02:57 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[블로그 히트 카운트 읽기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 02 Oct 2017 07:06:55 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[블로그 히트 카운트 읽기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>블로그 히트 카운트 읽기 - 웹 읽고 쓰고</title>
@@ -46,6 +46,7 @@
           <div class="float-left" >
             <a href="/index.html">Home</a>
             <a href="/about">About</a>
+            <a href="https://afrontend.github.io/rss">Rss</a>
             <!--<a href="#">RSS</a>-->
           </div>
         </div>
