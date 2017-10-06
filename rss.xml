@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Oct 2017 01:44:20 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[정적 사이트 생성기 - Metalsmith]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Oct 2017 01:46:03 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[정적 사이트 생성기 - Metalsmith]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>정적 사이트 생성기 - Metalsmith - 웹 읽고 쓰고</title>
@@ -83,7 +83,7 @@ GitHub Pages도 이런 파일을 올릴 수 있는 웹 서버의 한 예다.
 이전에 <a href="https://agvim.wordpress.com/2017/09/19/hubpress-%EC%84%A4%EC%B9%98%EB%A5%BC-%ED%8F%AC%EA%B8%B0%ED%95%9C-%EC%9D%B4%EC%9C%A0/">HubPress 설치에 실패</a>했고 다시 <a href="https://hexo.io/ko/index.html">Hexo</a>에 도전했다.
 워드프레스 테마를 보는 느낌이어서 친숙했지만 소스 코드의 동작하는 모습이 금방 눈에 들어오지 않아서 좀 더 이해하기 쉬운 <a href="http://www.metalsmith.io/">Metalsmith</a>로 변경했다.</p>
 <h2 id="metalsmith">Metalsmith</h2>
-<p>Metalsmith는 정말로 작다.
+<p><a href="http://www.metalsmith.io/">Metalsmith</a>는 정말로 작다.
 처음 자바스크립트를 만났을 때의 느낌 딱 그것이다
 자바스크립트 코드가 본래 짧은데 더욱이 Metalsmith는 약 400라인이다.
 대부분의 기능을 플러그인에서 찾으라고 한다.
