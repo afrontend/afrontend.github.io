@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Oct 2017 01:36:32 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[정적 사이트 생성기 - Metalsmith]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Oct 2017 01:44:20 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[정적 사이트 생성기 - Metalsmith]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>정적 사이트 생성기 - Metalsmith - 웹 읽고 쓰고</title>
@@ -78,7 +78,7 @@
 이 툴을 사용하여 생산된 파일을 특정 웹 서버에 올려서 블로그 서비스를 제공할 수 있다.
 GitHub Pages도 이런 파일을 올릴 수 있는 웹 서버의 한 예다.
 <strong>S</strong>tatic <strong>S</strong>ite <strong>G</strong>enerator는 종류가 많아서 <a href="https://www.staticgen.com/">고르는 게</a> 일이다.
-생각보다 여러 프로그램 언어로 개발되는 것을 보고 놀랐다.
+생각보다 여러 프로그래밍 언어로 개발되는 것을 보고 놀랐다.
 평소에 자바스크립트를 사용해서 그런지 자바스크립트로 만들어진 것을 찾게 되었다.
 이전에 <a href="https://agvim.wordpress.com/2017/09/19/hubpress-%EC%84%A4%EC%B9%98%EB%A5%BC-%ED%8F%AC%EA%B8%B0%ED%95%9C-%EC%9D%B4%EC%9C%A0/">HubPress 설치에 실패</a>했고 다시 <a href="https://hexo.io/ko/index.html">Hexo</a>에 도전했다.
 워드프레스 테마를 보는 느낌이어서 친숙했지만 소스 코드의 동작하는 모습이 금방 눈에 들어오지 않아서 좀 더 이해하기 쉬운 <a href="http://www.metalsmith.io/">Metalsmith</a>로 변경했다.</p>
