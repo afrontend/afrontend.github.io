@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Oct 2017 15:15:00 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 07 Oct 2017 23:55:41 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>웹 데이터를 카드 모양으로 나타내기 - 웹 읽고 쓰고</title>
@@ -57,36 +57,19 @@
         </h1>
         <div class="container"> <div class="row"> &nbsp; </div> </div>
       <h2 id="-">웹 데이터 표시</h2>
-<p>웹 데이터를 읽어서 덩그러니 텍스트 문자로 표현하는 것보다 보기 좋게 꾸미는 것이 그 데이터를 더 가치 있게 만든다고 생각한다.
-<a href="https://afrontend.github.io/posts/blog-hit-count/">특정 블로그의 통계 정보</a>를 HTML5를 사용하여 브라우저로 읽을 수 있게 하겠다.
-짧은 시작 코드로 유명한 Node.js를 사용하겠다.</p>
-<h2 id="node-js-">Node.js 웹 서버</h2>
-<p>브라우저에서 주소를 입력하면 테스트 데이터를 박스 안에 글자로 표시한다.
-Node.js의 웹 서버 기능을 사용하기 위해 내장 모듈인 <code>http</code> 대신 <a href="http://expressjs.com/ko">Express</a> 모듈을 사용할 예정이다.
-물론 <a href="https://nodejs.org/ko/">노드 설치</a>가 필요하다.
-프로젝트 디렉토리를 만든다.</p>
-<pre><code>$ mkdir /tmp/data-card &amp;&amp; cd /tmp/data-card
-</code></pre><p>전역으로 express 를 설치한다.</p>
-<pre><code>$ npm install express -g
-</code></pre><p>express 초기 파일을 생성한다.</p>
-<pre><code>$ express --hbs
-</code></pre><p>위에서 설치한 express는 -g 옵션에 의하여 전역으로 설치되고 터미널에서 express 명령을 사용할 수 있는 반면에
-지금 설치할 express는 동일한 모듈이지만 현재 디렉토리의 node_modules에 저장되어 이후 노드 자바스크립트에서 require 함수를 사용할 경우 검색되는 점이 다르다.
-Express 모듈을 설치한다.</p>
-<pre><code>$ npm install express --save
-</code></pre><p>–save 옵션을 사용하면 설치하는 모듈 정보를 현재 디렉토리의 package.json에 저장한다.
-웹 서버를 수행하여 브라우저 접속을 확인한다.</p>
-<pre><code>$ node bin/www
-</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구를 확인할 수 있다.</p>
-<pre><code>Express
-
-Welcome to Express
-</code></pre><p>웹 서버를 중지하기 위하여 <kbd>Ctrl-c</kbd> 를 입력한다.</p>
-<h2 id="-">블로그 카운트 값 서버에서 읽기</h2>
-<p>아래 명령은 특정 블로그의 통계 정보를 읽는다.
-노드 서버에서 바로 사용하기에 불편해서 같은 기능을 수행하는 JavaScript 코드로 변경했다.</p>
+<p><a href="https://afrontend.github.io/posts/blog-hit-count/">블로그를 읽은 횟수</a>는 텍스트 정보다.</p>
+<blockquote>
+<p>2,049 hits</p>
+</blockquote>
+<p>이 정보를 브라우저에서 그대로 표시하는 것보다는 같은 정보라도 보기 좋게 만드는 것이 그 데이터를 더 가치 있게 만든다고 생각한다.
+다이어그램 혹은 그래프를 사용하여 대시보드를 꾸미는 것은 비슷한 이유다.
+이 데이터를 HTML5로 바꾸고 브라우저로 읽을 수 있도록 웹 서비스로 만들었다.</p>
+<h2 id="-">블로그 읽은 횟수 서버에서 읽기</h2>
+<p>웹 서버로 Node.js를 사용할 예정이다.
+그런데 아래 명령어는 <a href="https://afrontend.github.io/posts/blog-hit-count/">터미널에서 웹 데이터를 읽는 방식</a>이다.
+그래서 같은 기능을 제공하는 자바스크립트 코드로 변경했다.</p>
 <pre><code>$ curl -s https://agvim.wordpress.com/ | hgrep -t &#39;#blog-stats-18 &gt; ul &gt; li&#39;
-</code></pre><p>사용하는 데이터는 두 가지다.</p>
+</code></pre><p>아래 두 데이터가 사용되는 것은 같다.</p>
 <table>
 <thead>
 <tr>
@@ -105,6 +88,7 @@ Welcome to Express
 </tr>
 </tbody>
 </table>
+<p>임의의 디렉토리에 아래 파일을 저장한다.</p>
 <pre><code class="hljs javascript"><span class="hljs-comment">// readCount.js</span>
 <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">'request'</span>);
 request(<span class="hljs-string">'https://agvim.wordpress.com/'</span>,
@@ -114,11 +98,32 @@ request(<span class="hljs-string">'https://agvim.wordpress.com/'</span>,
     <span class="hljs-built_in">console</span>.log($(<span class="hljs-string">'#blog-stats-18 &gt; ul &gt; li'</span>).text());
   });</code></pre>
 
-<p>실행 전에 추가 모듈을 설치한다.</p>
-<pre><code>$ npm install request cheerio --save
-</code></pre><p>노드로 실행하면 블로그 카운트 값을 보여준다.</p>
+<p>테스트 전에 추가 모듈을 설치한다.</p>
+<pre><code>$ npm install request cheerio
+</code></pre><p>노드로 실행하면 블로그 읽은 횟수를 보여준다.</p>
 <pre><code>$ node readCount.js
-</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 보이는 “Express” 문구는 routes/index.js 파일에 저장되어 있으며 이 파일은 views/layout.hbs 파일을 템블릿으로 사용한다.
+2,049 hits
+</code></pre><p>이 파일 일부 코드를 사용할 예정이다.</p>
+<h2 id="node-js-">Node.js 웹 서버</h2>
+<p>브라우저 접속을 지원하려면 웹 서버가 필요하다.
+웹 서버로 Node.js를 사용할 텐데 내장 모듈인 <code>http</code> 대신 <a href="http://expressjs.com/ko">Express</a> 모듈을 사용하겠다.
+<a href="https://nodejs.org/ko/">노드 설치</a>가 필요하다.
+프로젝트 디렉토리를 만든다.</p>
+<pre><code>$ mkdir /tmp/data-card &amp;&amp; cd /tmp/data-card
+</code></pre><p>전역으로 express 를 설치한다.</p>
+<pre><code>$ npm install express -g
+</code></pre><p>Express 초기 파일을 생성한다.</p>
+<pre><code>$ express --hbs
+</code></pre><p>Express가 사용할 모듈들을 설치한다.</p>
+<pre><code>$ npm install
+</code></pre><p>웹 서버를 수행하여 브라우저 접속을 확인한다.</p>
+<pre><code>$ node bin/www
+</code></pre><p><a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구를 확인할 수 있다.</p>
+<pre><code>Express
+
+Welcome to Express
+</code></pre><p>웹 서버를 중지하기 위하여 <kbd>Ctrl-c</kbd> 를 입력한다.</p>
+<p>위의 “Express” 문구는 routes/index.js 파일에 저장되어 있으며 이 파일은 views/layout.hbs 파일을 템블릿으로 사용한다.
 “Express” 문구 대신 readCount.js로 읽은 웹 데이터를 표시하기 위해 routes/index.js 파일 내용을 변경한다.</p>
 <pre><code class="hljs javascript"><span class="hljs-comment">//routes/index.js</span>
 <span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
@@ -140,15 +145,17 @@ router.get(<span class="hljs-string">'/'</span>, <span class="hljs-function"><sp
 
 <span class="hljs-built_in">module</span>.exports = router;</code></pre>
 
-<p>웹 서버를 다시 수행한다.</p>
+<p>사용할 모듈을 설치한다.</p>
+<pre><code>$ npm install request cheerio --save
+</code></pre><p>웹 서버를 다시 수행한다.</p>
 <pre><code>$ node bin/www
-</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구 대신 블로그 통계 값을 확인할 수 있다.</p>
+</code></pre><p><a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구 대신 블로그 읽은 횟수를 확인할 수 있다.</p>
 <pre><code>2,049 hits
 
 Welcome to 2,049 hits
 </code></pre><p>웹 서버를 중지하기 위하여 <kbd>Ctrl-c</kbd> 를 입력한다.</p>
 <h2 id="html5-">HTML5 페이지 준비</h2>
-<p>노드 서버에서 웹 데이터를 읽고 브라우저로 보여주는 기능이 완성되었다.
+<p>웹 서버에서 웹 데이터를 읽고 브라우저로 보여주는 기능이 완성되었다.
 이제 CSS을 사용하여 카드 모양으로 표시할 텐데 여러 HTML5 시작 코드 중에 <a href="https://html5boilerplate.com">HTML5 Boilerplate</a>를 선택했다.
 이 파일을 다운 받아 public 디렉터리에 저장한다.</p>
 <pre><code>$ cd public
@@ -158,20 +165,15 @@ $ rm html5-boilerplate_v6.0.1.zip
 </code></pre><p>public/index.html 파일의 일부분을</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello world! This is HTML5 Boilerplate.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
 
-<p>“2,049 hits” 로 대체하자. 이 후에 이 값을 웹에서 읽어온 값으로 대체할 예정이다.</p>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>2,049 hits<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
-
-<p>이 public/index.html 파일을 브라우저에서 읽어들이면 “2,049 hits” 문자열을 확인할 수 있다.
+<p>“2,049 hits” 로 대체하자. 이 후에 이 값을 웹에서 읽어온 값으로 대체할 예정이다.
 HTML 태그를 <code>div</code>로 변경하고 클래스 이름을 추가한다.</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"data-card"</span>&gt;</span>2,049 hits<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 
-<p>새로운 css 파일을 만들고</p>
-<pre><code>$ touch css/box.css
-</code></pre><p>public/index.html 파일에 아래 코드를 추가한다.</p>
+<p>public/index.html 파일의 <code>head</code> 테그 안에  아래 코드를 추가하고</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/box.css"</span>&gt;</span></code></pre>
 
-<p>클래스 이름 “data-card”에 적용할 css 파일을 만든다.
-내용은 간단하다.
+<p>새로운 css 파일을 만든다.
+클래스 이름 “data-card”에 적용할 css 파일을 만든다.
 크기를 고정하고 카드 모양으로 그림자를 넣었다.
 그리고 텍스트를 가운데 위치했다.</p>
 <pre><code><span class="hljs-comment">/*public/css/box.css*/</span>
@@ -183,6 +185,7 @@ HTML 태그를 <code>div</code>로 변경하고 클래스 이름을 추가한다
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
   <span class="hljs-attribute">height</span>: <span class="hljs-number">15rem</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-number">15rem</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;
   <span class="hljs-attribute">text-align</span>: center;
   <span class="hljs-attribute">transition</span>: <span class="hljs-number">0.3s</span>;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">15rem</span>;
@@ -193,33 +196,39 @@ HTML 태그를 <code>div</code>로 변경하고 클래스 이름을 추가한다
 }</code></pre>
 
 <p>이제 다시 웹 서버를 수행한다.</p>
-<pre><code>$ node bin/www
-</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “2,049 hits” 문구를 확인할 수 있다.</p>
-<h2 id="-">웹에서 읽은 데이터를 카드 형식으로 표현하기</h2>
+<pre><code>$ cd /tmp/data-card
+$ node bin/www
+</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 카드 모양의 “2,049 hits” 문구를 확인할 수 있다.</p>
+<h2 id="-">웹에서 읽은 데이터를 브라우저에서 읽기</h2>
 <p>이제 남은 작업은 한 가지다.
 웹에서 읽은 데이터를 public/index.html 파일에 삽입하는 단계가 남았다.
 Express는 직접 public/index.html 정적 파일을 수정하지 않는다.
-템블릿이라는 파일을 사용하여 웹 데이터를 삽입하는데 views/index.hbs 파일을 수정하여 이 목적을 달성할 수 있다.</p>
+템블릿이라는 파일을 사용하여 웹 데이터를 삽입하는데 views/index.hbs 파일을 수정하여 블로그 읽은 횟수를 전달할 수 있다.</p>
 <pre><code class="hljs html"><span class="hljs-comment">&lt;!--views/index.hbs--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{title}}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Welcome to {{title}}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
 
-<p>이 파일은 Express 모듈에 의하여 사용되는 템플릿 파일로 {{,  }} 이 값으로 둘러 쌓인 문자열은 routes/index.js가 전달 하는 변수의 값이다.
-이 변수로 웹 데이터가 전달된다.
-hbs 확장자는 이 파일이 <a href="http://handlebarsjs.com/">handlebars</a> 템플릿임을 의미한다.
-public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옭긴다.</p>
-<pre><code>$ cd /tmp/data-card
-$ mv public/index.html views/index.hbs
-</code></pre><p>views/index.hbs의 블로그 카운트 부분을 수정한다.</p>
+<p>이 파일은 Express 모듈에 의하여 사용되는 템플릿 파일로 {{,  }} 이 값으로 둘러 쌓인 문자열은 routes/index.js가 전달하는 변수다.
+이 변수를 사용하여 웹 데이터가 전달된다.
+hbs 확장자는 이 파일이 <a href="http://handlebarsjs.com">handlebars</a> 템플릿임을 의미한다.
+public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮긴다.</p>
+<pre><code>$ mv public/index.html views/index.hbs
+</code></pre><p>views/index.hbs의 블로그 읽은 횟수 부분을 수정한다.</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"data-card"</span>&gt;</span>{{title}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 
 <p>웹 서버를 수행한다.</p>
 <pre><code>$ node bin/www
-</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “2,049 hits” 보다 조금 많은 최신 블로그 통계 값을 확인할 수 있다.</p>
+</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “2,049 hits” 보다 조금 많은 블로그 읽은 횟수를 확인할 수 있다.</p>
 <h2 id="-">마무리</h2>
-<p><a href="http://expressjs.com/ko">Express</a>와 <a href="https://html5boilerplate.com">HTML5 Boilerplate</a>를 사용하여 웹 데이터를 표현하는데 많은 코드가 필요하지 않다.
-여러 카드를 사용하여 더 많은 웹 데이터들을 표시하여 대시 보드 처럼 사용할 수도 있다.</p>
-<p><img src="/images/data-card.png" alt="블로그 카운트" title="웹 데이터 카드 모양으로 표시하기"></p>
+<p>웹 데이터를 브라우저에서 읽을 수 있도록 여러 작업을 진행했다.</p>
+<ul>
+<li>웹 데이터 서버에서 읽기</li>
+<li>웹 서버 만들기</li>
+<li>웹 데이터 CSS로 꾸미기</li>
+</ul>
+<p><a href="http://expressjs.com/ko">Express</a>와 <a href="https://html5boilerplate.com">HTML5 Boilerplate</a>를 사용하여 작은 서비스를 만들었다.
+<a href="https://github.com/afrontend/data-card">전체 코드</a>를 다운로드하여 살펴볼 수 있다.</p>
+<p><img src="/images/data-card.png" alt="블로그 읽은 횟수" title="웹 데이터 카드 모양으로 표시하기"></p>
 
       <div class="footer">
         <div class="license">
