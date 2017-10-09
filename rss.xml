@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 08 Oct 2017 23:57:44 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 09 Oct 2017 00:27:23 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>웹 데이터를 카드 모양으로 나타내기 - 웹 읽고 쓰고</title>
@@ -68,7 +68,7 @@
 <p>웹 서버로 Node.js를 사용할 예정이다.
 그런데 아래 명령어는 <a href="https://afrontend.github.io/posts/blog-hit-count/">터미널에서 웹 데이터를 읽는 방식</a>이다.
 그래서 같은 기능을 제공하는 자바스크립트 코드로 변경했다.</p>
-<pre><code>$ curl -s https://agvim.wordpress.com/ | hgrep -t &#39;#blog-stats-18 &gt; ul &gt; li&#39;
+<pre><code>curl -s https://agvim.wordpress.com/ | hgrep -t &#39;#blog-stats-18 &gt; ul &gt; li&#39;
 </code></pre><p>아래 두 데이터가 사용되는 것은 같다.</p>
 <table>
 <thead>
@@ -99,7 +99,7 @@ request(<span class="hljs-string">'https://agvim.wordpress.com/'</span>,
   });</code></pre>
 
 <p>테스트 전에 추가 모듈을 설치한다.</p>
-<pre><code>$ npm install request cheerio
+<pre><code>npm install request cheerio
 </code></pre><p>노드로 실행하면 블로그 읽은 횟수를 보여준다.</p>
 <pre><code>$ node readCount.js
 2,049 hits
@@ -109,15 +109,15 @@ request(<span class="hljs-string">'https://agvim.wordpress.com/'</span>,
 웹 서버로 Node.js를 사용할 텐데 내장 모듈인 <code>http</code> 대신 <a href="http://expressjs.com/ko">Express</a> 모듈을 사용하겠다.
 <a href="https://nodejs.org/ko/">노드 설치</a>가 필요하다.
 프로젝트 디렉토리를 만든다.</p>
-<pre><code>$ mkdir /tmp/data-card &amp;&amp; cd /tmp/data-card
+<pre><code>mkdir /tmp/data-card &amp;&amp; cd /tmp/data-card
 </code></pre><p>전역으로 express 를 설치한다.</p>
-<pre><code>$ npm install express -g
+<pre><code>npm install express -g
 </code></pre><p>Express 초기 파일을 생성한다.</p>
-<pre><code>$ express --hbs
+<pre><code>express --hbs
 </code></pre><p>Express가 사용할 모듈들을 설치한다.</p>
-<pre><code>$ npm install
+<pre><code>npm install
 </code></pre><p>웹 서버를 수행하여 브라우저 접속을 확인한다.</p>
-<pre><code>$ npm start
+<pre><code>npm start
 </code></pre><p><a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구를 확인할 수 있다.</p>
 <pre><code>Express
 
@@ -146,9 +146,9 @@ router.get(<span class="hljs-string">'/'</span>, <span class="hljs-function"><sp
 <span class="hljs-built_in">module</span>.exports = router;</code></pre>
 
 <p>사용할 모듈을 설치한다.</p>
-<pre><code>$ npm install request cheerio --save
+<pre><code>npm install request cheerio --save
 </code></pre><p>웹 서버를 다시 수행한다.</p>
-<pre><code>$ npm start
+<pre><code>npm start
 </code></pre><p><a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구 대신 블로그 읽은 횟수를 확인할 수 있다.</p>
 <pre><code>2,049 hits
 
@@ -158,10 +158,10 @@ Welcome to 2,049 hits
 <p>웹 서버에서 웹 데이터를 읽고 브라우저로 보여주는 기능이 완성되었다.
 이제 CSS을 사용하여 카드 모양으로 표시할 텐데 여러 HTML5 시작 코드 중에 <a href="https://html5boilerplate.com">HTML5 Boilerplate</a>를 선택했다.
 이 파일을 다운 받아 public 디렉터리에 저장한다.</p>
-<pre><code>$ cd public
-$ wget https://github.com/h5bp/html5-boilerplate/releases/download/6.0.1/html5-boilerplate_v6.0.1.zip
-$ unzip html5-boilerplate_v6.0.1.zip
-$ rm html5-boilerplate_v6.0.1.zip
+<pre><code>cd public
+wget https://github.com/h5bp/html5-boilerplate/releases/download/6.0.1/html5-boilerplate_v6.0.1.zip
+unzip html5-boilerplate_v6.0.1.zip
+rm html5-boilerplate_v6.0.1.zip
 </code></pre><p>public/index.html 파일의 일부분을</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello world! This is HTML5 Boilerplate.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
 
@@ -196,8 +196,8 @@ HTML 태그를 <code>div</code>로 변경하고 클래스 이름을 추가한다
 }</code></pre>
 
 <p>이제 다시 웹 서버를 수행한다.</p>
-<pre><code>$ cd /tmp/data-card
-$ npm start
+<pre><code>cd /tmp/data-card
+npm start
 </code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 카드 모양의 “2,049 hits” 문구를 확인할 수 있다.</p>
 <h2 id="-">웹에서 읽은 데이터를 브라우저에서 읽기</h2>
 <p>이제 남은 작업은 한 가지다.
@@ -212,12 +212,12 @@ Express는 직접 public/index.html 정적 파일을 수정하지 않는다.
 이 변수를 사용하여 웹 데이터가 전달된다.
 hbs 확장자는 이 파일이 <a href="http://handlebarsjs.com">handlebars</a> 템플릿임을 의미한다.
 public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮긴다.</p>
-<pre><code>$ mv public/index.html views/index.hbs
+<pre><code>mv public/index.html views/index.hbs
 </code></pre><p>views/index.hbs의 블로그 읽은 횟수 부분을 수정한다.</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"data-card"</span>&gt;</span>{{title}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 
 <p>웹 서버를 수행한다.</p>
-<pre><code>$ npm start
+<pre><code>npm start
 </code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “2,049 hits” 보다 조금 많은 블로그 읽은 횟수를 확인할 수 있다.</p>
 <p><img src="/images/data-card.png" alt="블로그 읽은 횟수" title="웹 데이터 카드 모양으로 표시하기"></p>
 <h2 id="-">마무리</h2>
@@ -356,11 +356,11 @@ GitHub Pages도 이런 파일을 올릴 수 있는 웹 서버의 한 예다.
 파이프라인으로 지나가는 파일들을 각각의 플러그인 함수가 처리하는 방법으로 동작하는데 Metalsmith chain이라고 한다.
 어떤 플러그인을 적용할지 결정하면 된다.
 4개의 Node.js 모듈과 단, 하나의 자바스크립트에서 시작한다. 모듈은 미리 설치가 필요하다.</p>
-<pre><code>$ npm install metalsmith metalsmith-layouts metalsmith-permalinks metalsmith-markdown
+<pre><code>npm install metalsmith metalsmith-layouts metalsmith-permalinks metalsmith-markdown
 </code></pre><p>특별한 명령어 없이 노드에서 수행하면 된다.
 <a href="https://github.com/segmentio/metalsmith/blob/master/examples/static-site/index.js">index.js</a> 이름도 임의로 정하면 된다.
 Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 반해 Matalsmith는 이런 화면을 보려면 추가 작업이 더 필요하다.</p>
-<pre><code>$ node index.js
+<pre><code>node index.js
 </code></pre><h2 id="-">마무리</h2>
 <p>가입형 무료 워드프레스 기능과 비교하면 SSG는 기능이 부족하다.
 대신 쉽게 수정하고 그 동작 방식을 들여다 볼 수 있는 장점이 있다.
