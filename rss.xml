@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 09 Oct 2017 00:38:19 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 10 Oct 2017 10:21:24 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>웹 데이터를 카드 모양으로 나타내기 - 웹 읽고 쓰고</title>
@@ -43,7 +43,7 @@
           <div class="float-left" >
             <a href="/index.html">Home</a>
             <a href="/about">About</a>
-            <a href="https://afrontend.github.io/rss">Rss</a>
+            <a href="http://feeds.feedburner.com/AfrontendWebData" rel="alternate" type="application/rss+xml">RSS</a>
             <!--<a href="#">RSS</a>-->
           </div>
         </div>
@@ -307,7 +307,7 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
           <div class="float-left" >
             <a href="/index.html">Home</a>
             <a href="/about">About</a>
-            <a href="https://afrontend.github.io/rss">Rss</a>
+            <a href="http://feeds.feedburner.com/AfrontendWebData" rel="alternate" type="application/rss+xml">RSS</a>
             <!--<a href="#">RSS</a>-->
           </div>
         </div>
@@ -445,7 +445,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
           <div class="float-left" >
             <a href="/index.html">Home</a>
             <a href="/about">About</a>
-            <a href="https://afrontend.github.io/rss">Rss</a>
+            <a href="http://feeds.feedburner.com/AfrontendWebData" rel="alternate" type="application/rss+xml">RSS</a>
             <!--<a href="#">RSS</a>-->
           </div>
         </div>
