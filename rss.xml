@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 10 Oct 2017 10:21:24 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 10 Oct 2017 11:05:10 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>웹 데이터를 카드 모양으로 나타내기 - 웹 읽고 쓰고</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <!-- Google Fonts -->
     <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">-->
     
@@ -267,8 +267,8 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
   <head>
     <title>정적 사이트 생성기 - Metalsmith - 웹 읽고 쓰고</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <!-- Google Fonts -->
     <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">-->
     
@@ -405,8 +405,8 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
   <head>
     <title>블로그 히트 카운트 읽기 - 웹 읽고 쓰고</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <!-- Google Fonts -->
     <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">-->
     
