@@ -1,4 +1,271 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 11 Oct 2017 11:05:15 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 12 Oct 2017 14:10:23 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript 만으로 네모 굴리기 - 웹 읽고 쓰고</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="웹 읽고 쓰고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
+    <meta property="og:url" content="https://afrontend.github.io">
+    
+    <!-- Google Fonts -->
+    <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">-->
+    
+    <!-- CSS Reset -->
+    <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
+    
+    <!-- Milligram CSS minified -->
+    <!--<link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">-->
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/2.3.4/mini-default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <!-- You should properly set the path from the main file. -->
+    
+    <link rel="stylesheet" href="../css/blog.css">
+    
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-81660498-2');
+    </script>
+  </head>
+  </head>
+  <body>
+    <div class="header_bar" >
+      <div class="header">
+        <div class="clearfix">
+          <div class="float-left" >
+            <a href="/index.html">Home</a>
+            <a href="/about">About</a>
+            <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate" type="application/rss+xml">RSS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post">
+        <h1>
+          JavaScript 만으로 네모 굴리기
+          <br>
+          <span class="post_date">2017/10/12</span>
+        </h1>
+        <div class="container"> <div class="row"> &nbsp; </div> </div>
+      <h2 id="-">네모 만들기</h2>
+<p>코딩 인터뷰를 본적이 있다.
+5줄 정도의 짧은 HTML 코드와 함께 아래 문제가 주어졌다.
+결국 풀지 못했는데 지나고 나니 궁금해져서 정리한다.</p>
+<blockquote>
+<p>JavaScript 만을 사용하여 사각형을 만들고 오른쪽으로 움직이시오”</p>
+</blockquote>
+<p>우선 사각형을 만들고 style을 사용하여 움직일 계획이었다.
+그런데 잠깐? 동적으로 HTML 코드를 삽입하는 방법이 정확히 기억이 안 나는 것이다.
+이런, 낭패였다.</p>
+<p>“jQuery를 사용해도 되나요?”</p>
+<p>질문이 부끄러웠지만 그래도 일단 jQuery를 다운 받고 코드를 채우기 시작했다.
+네모를 만들었다.</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.square</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+
+<p>Style을 JavaScript로 적용한다.</p>
+<pre><code class="hljs javascript">$(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
+<span class="hljs-keyword">var</span> style = {
+  <span class="hljs-string">"width"</span>: <span class="hljs-string">"100px"</span>,
+  <span class="hljs-string">"height"</span>: <span class="hljs-string">"100px"</span>,
+  <span class="hljs-string">"border"</span>: <span class="hljs-string">"1px solid red"</span>
+};
+$(<span class="hljs-string">".square"</span>).css(style);</code></pre>
+
+<h2 id="-">네모 움직이기</h2>
+<p>네모를 오른쪽으로 움직이고 싶었지만 여기서 코딩은 중단되었다.
+객체를 사용하여  문제를 해결하라는 다른 요구 사항이 들어 왔기 때문이다.
+이 코드를 마무리하겠다.
+우선 네모를 오른쪽으로 움직이기 위해 간단하게 마진을 사용한다.
+2초 후에 네모는 400px 오른쪽으로 이동한다.</p>
+<pre><code class="hljs javascript">$(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
+<span class="hljs-keyword">var</span> style = {
+  <span class="hljs-string">"width"</span>: <span class="hljs-string">"100px"</span>,
+  <span class="hljs-string">"height"</span>: <span class="hljs-string">"100px"</span>,
+  <span class="hljs-string">"border"</span>: <span class="hljs-string">"1px solid red"</span>
+};
+$(<span class="hljs-string">".square"</span>).css(style);
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> moveStyle = {
+    <span class="hljs-string">"margin-left"</span>: <span class="hljs-string">"400px"</span>
+  };
+  $(<span class="hljs-string">".square"</span>).css(moveStyle);
+}, <span class="hljs-number">2000</span>);</code></pre>
+
+<p><a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">Transition</a>을 적용하여 4초 동안 음직이게 하면 이동이 부드러워진다.</p>
+<pre><code class="hljs javascript">$(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
+<span class="hljs-keyword">var</span> style = {
+  <span class="hljs-string">"width"</span>: <span class="hljs-string">"100px"</span>,
+  <span class="hljs-string">"height"</span>: <span class="hljs-string">"100px"</span>,
+  <span class="hljs-string">"border"</span>: <span class="hljs-string">"1px solid red"</span>
+};
+$(<span class="hljs-string">".square"</span>).css(style);
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> moveStyle = {
+    <span class="hljs-string">"margin-left"</span>: <span class="hljs-string">"400px"</span>,
+    <span class="hljs-string">"transition"</span>: <span class="hljs-string">"4s"</span>
+  };
+  $(<span class="hljs-string">".square"</span>).css(moveStyle);
+}, <span class="hljs-number">2000</span>);</code></pre>
+
+<h2 id="-">네모 굴리기</h2>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms">Transform</a>을 적용하여 네모를 360도 회전할 텐데 오른쪽 이동과 동시에 적용됨으로 굴러가는 것처럼 보인다.</p>
+<pre><code class="hljs javascript">$(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
+<span class="hljs-keyword">var</span> style = {
+  <span class="hljs-string">"width"</span>: <span class="hljs-string">"100px"</span>,
+  <span class="hljs-string">"height"</span>: <span class="hljs-string">"100px"</span>,
+  <span class="hljs-string">"border"</span>: <span class="hljs-string">"1px solid red"</span>
+};
+$(<span class="hljs-string">".square"</span>).css(style);
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> moveStyle = {
+    <span class="hljs-string">"margin-left"</span>: <span class="hljs-string">"400px"</span>,
+    <span class="hljs-string">"transition"</span>: <span class="hljs-string">"4s"</span>,
+    <span class="hljs-string">"transform"</span>: <span class="hljs-string">"rotate(360deg)"</span>
+  };
+  $(<span class="hljs-string">".square"</span>).css(moveStyle);
+}, <span class="hljs-number">2000</span>);</code></pre>
+
+<p>아래는 제대로 작업을 했다면 코딩 인터뷰 때 제출했을 코드다.</p>
+<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>네모 굴리기<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-2.2.4.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+      $(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
+      <span class="hljs-keyword">var</span> style = {
+        <span class="hljs-string">"width"</span>: <span class="hljs-string">"100px"</span>,
+        <span class="hljs-string">"height"</span>: <span class="hljs-string">"100px"</span>,
+        <span class="hljs-string">"border"</span>: <span class="hljs-string">"1px solid red"</span>
+      };
+      $(<span class="hljs-string">".square"</span>).css(style);
+      setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> moveStyle = {
+          <span class="hljs-string">"margin-left"</span>: <span class="hljs-string">"400px"</span>,
+          <span class="hljs-string">"transition"</span>: <span class="hljs-string">"4s"</span>,
+          <span class="hljs-string">"transform"</span>: <span class="hljs-string">"rotate(360deg)"</span>
+        };
+        $(<span class="hljs-string">".square"</span>).css(moveStyle);
+      }, <span class="hljs-number">2000</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+
+<h2 id="jquery-">jQuery 제거</h2>
+<p>아직 jQuery를 사용하고 있는 문제가 남아 있다.
+본래 문제는 jQuery 사용에 대한 언급이 없음으로
+jQuery 코드를 제거하고 자바스크립트 코드로 변경했다.</p>
+<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> node = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"div"</span>);
+node.className = <span class="hljs-string">'square'</span>;
+<span class="hljs-keyword">var</span> elements = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"body"</span>);
+elements[<span class="hljs-number">0</span>].appendChild(node);
+node.style.width = <span class="hljs-string">"100px"</span>;
+node.style.height = <span class="hljs-string">"100px"</span>;
+node.style.border = <span class="hljs-string">"1px solid red"</span>;
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  node.style.marginLeft = <span class="hljs-string">"400px"</span>;
+  node.style.transition = <span class="hljs-string">"4s"</span>;
+  node.style.transform = <span class="hljs-string">"rotate(360deg)"</span>;
+}, <span class="hljs-number">2000</span>);</code></pre>
+
+<p>jQuery를 사용한 버전이나 사용하지 않은 버전 모두 동작은 동일하지만 모두 읽기가 너무 어렵다.
+HTML과 CSS를 같이 사용하지 않고 JavaScript만을 사용했기 때문이다.
+같은 기능을 HTML과 CSS를 사용하여 개선하면 아래와 같다.</p>
+<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>네모 굴리기<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+      <span class="hljs-selector-class">.square</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
+      }
+      <span class="hljs-selector-class">.square</span><span class="hljs-selector-class">.move</span> {
+        <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">400px</span>;
+        <span class="hljs-attribute">transition</span>: <span class="hljs-number">4s</span>;
+        <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(360deg)
+      }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"square"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+      setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".square"</span>).className += <span class="hljs-string">' move'</span>;
+      }, <span class="hljs-number">2000</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+
+<h2 id="-">마무리</h2>
+<p>버전별 소스 코드를 확인할 수 있다.</p>
+<ul>
+<li><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299#file-square-jquery-html">jQuery 사용한 버전</a></li>
+<li><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299#file-square-without-jquery-html">jQuery 사용하지 않은 버전</a></li>
+<li><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299#file-square-html">HTML, CSS 사용한 버전</a></li>
+</ul>
+<p><a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0;" /></a></p>
+
+      <div class="footer">
+        <div class="license">
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
+        </div>
+      
+        <div id="disqus_thread"></div>
+        <script>
+      
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://afrontend-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      
+      </div>
+    </div>
+    <script id="dsq-count-scr" src="//afrontend-github-io.disqus.com/count.js" async></script>
+  </body>
+</html>
+]]></description><link>https://afrontend.github.io/posts/roll-a-square-with-the-javascript</link><guid isPermaLink="true">https://afrontend.github.io/posts/roll-a-square-with-the-javascript</guid><pubDate>Thu, 12 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>웹 데이터를 카드 모양으로 나타내기 - 웹 읽고 쓰고</title>
@@ -49,7 +316,7 @@
           <div class="float-left" >
             <a href="/index.html">Home</a>
             <a href="/about">About</a>
-            <a href="http://feeds.feedburner.com/AfrontendWebData" rel="alternate" type="application/rss+xml">RSS</a>
+            <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate" type="application/rss+xml">RSS</a>
           </div>
         </div>
       </div>
@@ -235,6 +502,7 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
 <p><a href="http://expressjs.com/ko">Express</a>와 <a href="https://html5boilerplate.com">HTML5 Boilerplate</a>를 사용하여 작은 서비스를 만들었다.
 <a href="https://github.com/afrontend/data-card">전체 코드</a>를 다운로드하여 살펴보거나 <a href="https://data-card.herokuapp.com/">온라인에서 확인</a>할 수 있다.
 온라인 서버는 무료 서버에서 동작함으로 잠들어 있다면 10초 정도 로딩 시간이 걸릴 수 있다.</p>
+<p><a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0;" /></a></p>
 
       <div class="footer">
         <div class="license">
@@ -318,7 +586,7 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
           <div class="float-left" >
             <a href="/index.html">Home</a>
             <a href="/about">About</a>
-            <a href="http://feeds.feedburner.com/AfrontendWebData" rel="alternate" type="application/rss+xml">RSS</a>
+            <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate" type="application/rss+xml">RSS</a>
           </div>
         </div>
       </div>
@@ -378,6 +646,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
 서버와 통신하는 기능이 없으니 당연하다.
 <a href="https://disqus.com/">Disqus</a>를 사용하여 댓글 기능을 추가했다.
 당신이 보고 있는 이 블로그가 그 결과다.</p>
+<p><a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0;" /></a></p>
 
       <div class="footer">
         <div class="license">
@@ -461,7 +730,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
           <div class="float-left" >
             <a href="/index.html">Home</a>
             <a href="/about">About</a>
-            <a href="http://feeds.feedburner.com/AfrontendWebData" rel="alternate" type="application/rss+xml">RSS</a>
+            <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate" type="application/rss+xml">RSS</a>
           </div>
         </div>
       </div>
@@ -582,6 +851,7 @@ Curl의 두 번째 인자가 웹 페이지 주소이고 hgrep의 두 번째 인�
 <p>웹 스크랩 혹은 웹 크롤링등의 고급적인 방법을 사용하지 않고 고급 프로그래밍 언어를 사용하지 않아도 작은 명령어들을 함께 사용하여 웹 데이터를 가공할 수 있다.
 한번 만들어 놓으면 자주 사용할 수 있으며 시간순으로 저장하여 변화 과정을 추적할 수도 있다.
 개인 툴 박스에 넣어두기에 딱이다.</p>
+<p><a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0;" /></a></p>
 
       <div class="footer">
         <div class="license">
