@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 12 Oct 2017 14:24:23 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 12 Oct 2017 14:26:28 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>JavaScript 만으로 네모 굴리기 - 웹 읽고 쓰고</title>
@@ -193,9 +193,9 @@ setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span
   node.style.transform = <span class="hljs-string">"rotate(360deg)"</span>;
 }, <span class="hljs-number">2000</span>);</code></pre>
 
-<p>jQuery를 사용한 버전이나 사용하지 않은 버전 모두 동작은 동일하지만 모두 읽기가 너무 어렵다.</p>
 <h2 id="html-css-">HTML과 CSS 사용</h2>
-<p>HTML과 CSS를 같이 사용하지 않고 JavaScript만을 사용했기 때문이다.
+<p>jQuery를 사용한 버전이나 사용하지 않은 버전 모두 동작은 동일하지만 모두 읽기가 너무 어렵다.
+HTML과 CSS를 같이 사용하지 않고 JavaScript만을 사용했기 때문이다.
 같은 기능을 HTML과 CSS를 사용하여 개선하면 아래와 같다.</p>
 <pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
