@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 12 Oct 2017 14:26:28 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 13 Oct 2017 13:37:38 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>JavaScript 만으로 네모 굴리기 - 웹 읽고 쓰고</title>
@@ -47,9 +47,10 @@
       <div class="header">
         <div class="clearfix">
           <div class="float-left" >
-            <a href="/index.html">Home</a>
-            <a href="/about">About</a>
+            <a href="/index.html" title="글 목록">Home</a>
+            <a href="/about" title="저는">About</a>
             <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate" type="application/rss+xml">RSS</a>
+            <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&amp;loc=en_US" title="이메일로 글을 받아 볼 수 있어요">이메일 구독</a>
           </div>
         </div>
       </div>
@@ -113,7 +114,7 @@ setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span
   $(<span class="hljs-string">".square"</span>).css(moveStyle);
 }, <span class="hljs-number">2000</span>);</code></pre>
 
-<p><a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">Transition</a>을 적용하여 4초 동안 음직이게 하면 이동이 부드러워진다.</p>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">Transition</a>을 적용하여 4초 동안 움직이게 하면 이동이 부드러워진다.</p>
 <pre><code class="hljs javascript">$(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
 <span class="hljs-keyword">var</span> style = {
   <span class="hljs-string">"width"</span>: <span class="hljs-string">"100px"</span>,
@@ -147,91 +148,25 @@ setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span
   $(<span class="hljs-string">".square"</span>).css(moveStyle);
 }, <span class="hljs-number">2000</span>);</code></pre>
 
-<p>아래는 제대로 작업을 했다면 코딩 인터뷰 때 제출했을 코드다.</p>
-<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>네모 굴리기<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-2.2.4.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-      $(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
-      <span class="hljs-keyword">var</span> style = {
-        <span class="hljs-string">"width"</span>: <span class="hljs-string">"100px"</span>,
-        <span class="hljs-string">"height"</span>: <span class="hljs-string">"100px"</span>,
-        <span class="hljs-string">"border"</span>: <span class="hljs-string">"1px solid red"</span>
-      };
-      $(<span class="hljs-string">".square"</span>).css(style);
-      setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-        <span class="hljs-keyword">var</span> moveStyle = {
-          <span class="hljs-string">"margin-left"</span>: <span class="hljs-string">"400px"</span>,
-          <span class="hljs-string">"transition"</span>: <span class="hljs-string">"4s"</span>,
-          <span class="hljs-string">"transform"</span>: <span class="hljs-string">"rotate(360deg)"</span>
-        };
-        $(<span class="hljs-string">".square"</span>).css(moveStyle);
-      }, <span class="hljs-number">2000</span>);
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>제대로 작업을 했다면 코딩 인터뷰 때 제출했을 코드다.</p>
+<iframe width="100%" height="300" src="//jsfiddle.net/Afrontend/hggs4bfu/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <h2 id="jquery-">jQuery 제거</h2>
 <p>아직 jQuery를 사용하고 있는 문제가 남아 있다.
 본래 문제는 jQuery 사용에 대한 언급이 없음으로
 jQuery 코드를 제거하고 자바스크립트 코드로 변경했다.</p>
-<pre><code class="hljs javascript"><span class="hljs-keyword">var</span> node = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"div"</span>);
-node.className = <span class="hljs-string">'square'</span>;
-<span class="hljs-keyword">var</span> elements = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"body"</span>);
-elements[<span class="hljs-number">0</span>].appendChild(node);
-node.style.width = <span class="hljs-string">"100px"</span>;
-node.style.height = <span class="hljs-string">"100px"</span>;
-node.style.border = <span class="hljs-string">"1px solid red"</span>;
-setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  node.style.marginLeft = <span class="hljs-string">"400px"</span>;
-  node.style.transition = <span class="hljs-string">"4s"</span>;
-  node.style.transform = <span class="hljs-string">"rotate(360deg)"</span>;
-}, <span class="hljs-number">2000</span>);</code></pre>
+<iframe width="100%" height="300" src="//jsfiddle.net/Afrontend/1Lt77d5p/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <h2 id="html-css-">HTML과 CSS 사용</h2>
 <p>jQuery를 사용한 버전이나 사용하지 않은 버전 모두 동작은 동일하지만 모두 읽기가 너무 어렵다.
-HTML과 CSS를 같이 사용하지 않고 JavaScript만을 사용했기 때문이다.
-같은 기능을 HTML과 CSS를 사용하여 개선하면 아래와 같다.</p>
-<pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>네모 굴리기<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
-      <span class="hljs-selector-class">.square</span> {
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
-        <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
-        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid red;
-      }
-      <span class="hljs-selector-class">.square</span><span class="hljs-selector-class">.move</span> {
-        <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">400px</span>;
-        <span class="hljs-attribute">transition</span>: <span class="hljs-number">4s</span>;
-        <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(360deg)
-      }
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"square"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-      setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-        <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">".square"</span>).className += <span class="hljs-string">' move'</span>;
-      }, <span class="hljs-number">2000</span>);
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+JavaScript만을 사용했기 때문이다.
+같은 기능을 HTML과 CSS를 사용하여 개선할 수 있다.</p>
+<iframe width="100%" height="300" src="//jsfiddle.net/Afrontend/3m6uku0o/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-<h2 id="-">마무리</h2>
-<p>버전별 소스 코드를 확인할 수 있다.</p>
-<ul>
-<li><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299#file-square-jquery-html">jQuery 사용한 버전</a></li>
-<li><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299#file-square-without-jquery-html">jQuery 사용하지 않은 버전</a></li>
-<li><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299#file-square-html">HTML, CSS 사용한 버전</a></li>
-</ul>
+<p>그래도 HTML, CSS, JavaScript 이렇게 세개의 파일로 분리되는 것이 일반적이다.</p>
+<iframe width="100%" height="300" src="//jsfiddle.net/Afrontend/e1d6pvkr/7/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299">전체 코드</a>는 따로 확인할 수 있다.</p>
 <p><a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0;" /></a></p>
 
       <div class="footer">
@@ -314,9 +249,10 @@ HTML과 CSS를 같이 사용하지 않고 JavaScript만을 사용했기 때문�
       <div class="header">
         <div class="clearfix">
           <div class="float-left" >
-            <a href="/index.html">Home</a>
-            <a href="/about">About</a>
+            <a href="/index.html" title="글 목록">Home</a>
+            <a href="/about" title="저는">About</a>
             <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate" type="application/rss+xml">RSS</a>
+            <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&amp;loc=en_US" title="이메일로 글을 받아 볼 수 있어요">이메일 구독</a>
           </div>
         </div>
       </div>
@@ -584,9 +520,10 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
       <div class="header">
         <div class="clearfix">
           <div class="float-left" >
-            <a href="/index.html">Home</a>
-            <a href="/about">About</a>
+            <a href="/index.html" title="글 목록">Home</a>
+            <a href="/about" title="저는">About</a>
             <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate" type="application/rss+xml">RSS</a>
+            <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&amp;loc=en_US" title="이메일로 글을 받아 볼 수 있어요">이메일 구독</a>
           </div>
         </div>
       </div>
@@ -728,9 +665,10 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
       <div class="header">
         <div class="clearfix">
           <div class="float-left" >
-            <a href="/index.html">Home</a>
-            <a href="/about">About</a>
+            <a href="/index.html" title="글 목록">Home</a>
+            <a href="/about" title="저는">About</a>
             <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate" type="application/rss+xml">RSS</a>
+            <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&amp;loc=en_US" title="이메일로 글을 받아 볼 수 있어요">이메일 구독</a>
           </div>
         </div>
       </div>
