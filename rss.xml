@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 18 Oct 2017 12:27:27 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 21 Oct 2017 00:38:43 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>JavaScript 만으로 네모 굴리기 - 웹 읽고 쓰고</title>
@@ -46,7 +46,7 @@
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="글 목록">Home</a>
+          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
           <a href="/about" title="저는">About</a>
         </div>
       </div>
@@ -156,10 +156,6 @@ JavaScript만을 사용했기 때문이다.
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
       </div>
       <div class="footer">
-        <div class="license">
-          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
-        </div>
-      
         <div id="disqus_thread"></div>
         <script>
       
@@ -233,7 +229,7 @@ JavaScript만을 사용했기 때문이다.
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="글 목록">Home</a>
+          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
           <a href="/about" title="저는">About</a>
         </div>
       </div>
@@ -426,10 +422,6 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
       </div>
       <div class="footer">
-        <div class="license">
-          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
-        </div>
-      
         <div id="disqus_thread"></div>
         <script>
       
@@ -503,7 +495,7 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="글 목록">Home</a>
+          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
           <a href="/about" title="저는">About</a>
         </div>
       </div>
@@ -570,10 +562,6 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
       </div>
       <div class="footer">
-        <div class="license">
-          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
-        </div>
-      
         <div id="disqus_thread"></div>
         <script>
       
@@ -647,7 +635,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="글 목록">Home</a>
+          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
           <a href="/about" title="저는">About</a>
         </div>
       </div>
@@ -775,10 +763,6 @@ Curl의 두 번째 인자가 웹 페이지 주소이고 hgrep의 두 번째 인�
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
       </div>
       <div class="footer">
-        <div class="license">
-          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
-        </div>
-      
         <div id="disqus_thread"></div>
         <script>
       
