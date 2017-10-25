@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 21 Oct 2017 01:53:32 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 25 Oct 2017 14:39:28 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Cordova 사용하여 웹 데이터 읽기]]></title><description><![CDATA[<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cordova 사용하여 웹 데이터 읽기 - 웹 읽고 쓰고</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="웹 읽고 쓰고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
+    <meta property="og:url" content="https://afrontend.github.io">
+    
+    <!-- Google Fonts -->
+    <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">-->
+    
+    <!-- CSS Reset -->
+    <!--<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">-->
+    
+    <!-- Milligram CSS minified -->
+    <!--<link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">-->
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
+    
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/2.3.4/mini-default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <!-- You should properly set the path from the main file. -->
+    
+    <link rel="stylesheet" href="../css/blog.css">
+    
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-81660498-2');
+    </script>
+  </head>
+  </head>
+  <body>
+    <div class="header_bar" >
+      <div class="header">
+        <div class="float-left" >
+          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
+          <a href="/about" title="저는">About</a>
+        </div>
+      </div>
+    </div>
+    <div class="post">
+        <h1>
+          Cordova 사용하여 웹 데이터 읽기
+          <div class="post_date">2017/10/25</div>
+        </h1>
+        <br>
+      <p><a href="https://afrontend.github.io/posts/data-card/">이전 글</a>에서 Node.js 서버를 사용하여 웹 데이터를 읽고 이 값을 브라우저에서 확인했다.
+같은 내용을 브라우저가 아닌 안드로이드 앱으로 읽을 예정인데 Cordova를 사용한다.
+<a href="https://cordova.apache.org/">Cordova</a>를 사용하면 앱에서 브라우저가 보는 웹 페이지를 볼 수 있다.
+안드로이드 앱 빌드를 준비를 한다.</p>
+<pre><code>npm install -g cordova
+cordova create cordova_data_card com.example.cordova_data_card WebDataCard
+cd cordova_data_card
+cordova platform add android
+cordova platform ls
+</code></pre><p>Cordova가 로컬 파일 대신 <a href="https://data-card.herokuapp.com/">https://data-card.herokuapp.com/</a> 웹 주소를 읽을 수 있도록 아래 파일 수정한다.</p>
+<pre><code>vim platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java
+</code></pre><p><code>setStartUrl</code> 메소드 안에 한 줄을 변경한다.</p>
+<pre><code class="hljs java"><span class="hljs-comment">//before</span>
+launchUrl = <span class="hljs-string">"file:///android_asset/www/"</span> + src;
+
+<span class="hljs-comment">//after</span>
+launchUrl = <span class="hljs-string">"https://data-card.herokuapp.com/"</span>;</code></pre>
+
+<p>앱을 빌드하고 에뮬레이터로 확인한다.</p>
+<pre><code>cordova build
+cordova emulate android
+</code></pre><p><img src="/images/small-cordova-data-card.png" alt="Cordova 예제" title="웹 데이터를 Cordova 안드로이드 앱으로 읽기"></p>
+
+      <br>
+      <div>
+        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub">Afrontend</a>
+        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog">Afrontend Blog</a>
+        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate">이메일 구독하기</a>
+        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
+      </div>
+      <br>
+      <div id="disqus_thread"></div>
+      <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://afrontend-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <div class="footer">
+      </div>
+    </div>
+    <script id="dsq-count-scr" src="//afrontend-github-io.disqus.com/count.js" async></script>
+  </body>
+</html>
+]]></description><link>https://afrontend.github.io/posts/cordova-data-card</link><guid isPermaLink="true">https://afrontend.github.io/posts/cordova-data-card</guid><pubDate>Wed, 25 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>JavaScript 만으로 네모 굴리기 - 웹 읽고 쓰고</title>
