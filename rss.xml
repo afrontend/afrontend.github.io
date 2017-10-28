@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 25 Oct 2017 14:39:28 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Cordova 사용하여 웹 데이터 읽기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 28 Oct 2017 08:27:52 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Cordova 사용하여 웹 데이터 읽기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>Cordova 사용하여 웹 데이터 읽기 - 웹 읽고 쓰고</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
+    <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
     <meta property="og:title" content="웹 읽고 쓰고">
     <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
@@ -121,6 +122,7 @@ cordova emulate android
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
+    <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
     <meta property="og:title" content="웹 읽고 쓰고">
     <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
@@ -306,6 +308,7 @@ JavaScript만을 사용했기 때문이다.
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
+    <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
     <meta property="og:title" content="웹 읽고 쓰고">
     <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
@@ -574,6 +577,7 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
+    <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
     <meta property="og:title" content="웹 읽고 쓰고">
     <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
@@ -716,6 +720,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
+    <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
     <meta property="og:title" content="웹 읽고 쓰고">
     <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
