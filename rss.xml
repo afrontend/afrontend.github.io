@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 22 Feb 2018 15:01:59 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Bulma를 선택한 이유]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 25 Feb 2018 10:06:01 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Bulma를 선택한 이유]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>Bulma를 선택한 이유 - 웹 읽고 쓰고</title>
@@ -128,10 +128,10 @@
 
       <br>
       <div>
-        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub">Afrontend</a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog">Afrontend Blog</a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate">이메일 구독하기</a>
-        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
+        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
+        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
+        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -245,10 +245,10 @@ cordova emulate android
 
       <br>
       <div>
-        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub">Afrontend</a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog">Afrontend Blog</a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate">이메일 구독하기</a>
-        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
+        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
+        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
+        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -432,10 +432,10 @@ JavaScript만을 사용했기 때문이다.
 
       <br>
       <div>
-        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub">Afrontend</a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog">Afrontend Blog</a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate">이메일 구독하기</a>
-        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
+        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
+        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
+        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -701,10 +701,10 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
 
       <br>
       <div>
-        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub">Afrontend</a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog">Afrontend Blog</a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate">이메일 구독하기</a>
-        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
+        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
+        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
+        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -844,10 +844,10 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
 
       <br>
       <div>
-        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub">Afrontend</a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog">Afrontend Blog</a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate">이메일 구독하기</a>
-        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
+        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
+        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
+        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -1048,10 +1048,10 @@ Curl의 두 번째 인자가 웹 페이지 주소이고 hgrep의 두 번째 인�
 
       <br>
       <div>
-        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub">Afrontend</a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog">Afrontend Blog</a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate">이메일 구독하기</a>
-        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate">RSS</a>
+        <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
+        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
+        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
       </div>
       <br>
       <div id="disqus_thread"></div>
