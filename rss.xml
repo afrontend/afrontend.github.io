@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Mon, 26 Feb 2018 14:30:13 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 27 Feb 2018 10:51:27 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 웹 읽고 쓰고</title>
@@ -31,6 +31,7 @@
     <!-- You should properly set the path from the main file. -->
     
     <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/custom_gist.css">
     
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
@@ -47,8 +48,7 @@
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
-          <a href="/about" title="저는">About</a>
+          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
         </div>
       </div>
     </div>
@@ -61,10 +61,12 @@
       <p>동네 도서관에서 책 찾기 <a href="https://dongne.herokuapp.com/">웹 서비스</a>를 만들어 사용하고 있었는데 불편해서 수정했다.
 그 과정에 무엇이 불편했고 어떻게 수정했는지 정리했다.</p>
 <h2 id="-">불편한 점</h2>
-<p>책 이름을 입력한 후 나타나는 회색 바탕의 도서관 이름들의 의미가 분명하지 않다.
-검색 시작 버튼을 눌렀는데 내용에 비해 화면이 너무 작아서 검색 결과를 볼 수 없다.
-다시 시작 버튼의 의미가 분명하지 않다.
-간단한 기능임에도 어떻게 사용해야 하는지 자꾸 궁금해지는 서비스다.</p>
+<ul>
+<li>책 이름을 입력한 후 나타나는 회색 바탕의 도서관 이름들의 의미가 분명하지 않다.</li>
+<li>검색 시작 버튼을 눌렀는데 내용에 비해 화면이 너무 작아서 검색 결과를 볼 수 없다.</li>
+<li>다시 시작 버튼의 의미가 분명하지 않다.</li>
+<li>간단한 기능임에도 어떻게 사용해야 하는지 자꾸 궁금해지는 서비스다.</li>
+</ul>
 <p><img src="/images/dongne.gif" alt="수정전 동네 도서관 화면" title="조금 불편한 서비스"></p>
 <p>아래 입력란에 책 제목을 입력해서 테스트할 수 있다.
 아래 서비스는 늦게 로딩되는 경우가 있는데 그 때는 10초 정도 걸린다. 무료 서버를 사용하고 있기 때문이다.</p>
@@ -74,7 +76,7 @@
 <!--![수정전 동네 도서관 화면 2](/images/dongne2.png "검색어 입력 후")-->
 <!--![수정전 동네 도서관 화면 3](/images/dongne3.png "검색 결과")-->
 <h2 id="-">시나리오</h2>
-<p>어떤 순서로 동작할지 시나리오를 정리했다.</p>
+<p>어떤 순서로 동작할지 시나리오를 정했다.</p>
 <ol>
 <li>도서관을 선택한다.</li>
 <li>책 제목의 일부를 입력한다.</li>
@@ -89,11 +91,14 @@
 <li>책 제목을 입력할 입력란</li>
 <li>검색된 책 제목 리스트</li>
 </ul>
-<p>이 UI를 웹 API 서버인 dlserver 올렸다.
+<p>이 UI를 웹 API 서버인 dlserver에 올렸다.
 <a href="http://expressjs.com/ko/starter/static-files.html">public 디렉토리 제공 기능</a>을 추가했다.
 아래에서 바로 검색할 수 있다.</p>
 <iframe src="https://dlserver.herokuapp.com/app" style="border: 4px solid black; border-radius: 5px; margin-left: 14px; margin-top: 10px" width="634" height="361" frameborder="0"></iframe>
 
+<blockquote>
+<p><a href="https://dlserver.herokuapp.com/app">웹 페이지</a>에서 바로 접속할 수 있다.</p>
+</blockquote>
 <h2 id="-">자바스크립트 프레임워크</h2>
 <p>자바스크립트 프레임워크는 <a href="http://todomvc.com/">종류가 많아서 선택</a>이 중요하다.
 그렇지만 시간이 부족함으로 그 동안 사용해 왔던 AngularJS를 사용할텐데
@@ -104,13 +109,16 @@
 └── index.html</code></pre>
 
 <p><a href="https://github.com/afrontend/dlserver/tree/5242c198b377195ada703bb808c6c1582a83b342/public">App.js</a> 파일 안에 AngularJS로 만드는 모든 자바스크립트 파일을 넣었다.
-하나의 service와 하나의 controller를 사용했다.
-아래 두 개의 인터페이스를 사용한다.</p>
+이 안에 하나의 service와 하나의 controller를 만들었다.
+아래 두 개의 <a href="https://github.com/afrontend/dlserver">웹 API</a>를 <a href="https://github.com/afrontend/dlserver/blob/db5694b33cc8397f23db108a3416fd5a8b676e5c/public/app.js#L13-L51">사용</a>한다.</p>
 <ul>
 <li><a href="https://dlserver.herokuapp.com/libraryList">https://dlserver.herokuapp.com/libraryList</a></li>
 <li><a href="https://dlserver.herokuapp.com/?title=javascript&amp;libraryName=판교">https://dlserver.herokuapp.com/?title=javascript&amp;libraryName=판교</a></li>
 </ul>
-<p>각각의 결과는 아래와 같은 JSON 형식이다.</p>
+<p>접근 코드는 아래와 같으며</p>
+<script src="https://gist.github.com/afrontend/70fabb3b737bdf3ac0f6e50ec66c4cd1.js"></script>
+
+<p>결과는 모두 JSON 형식이다.</p>
 <pre><code class="hljs json">[
     <span class="hljs-string">"경기도립중앙도서관"</span>,
     <span class="hljs-string">"경기도립평택도서관"</span>,
@@ -139,14 +147,15 @@
 <p><a href="https://github.com/afrontend/dlserver">전체 코드</a>를 다운로드하여 살펴보거나 <a href="https://dlserver.herokuapp.com/app">온라인</a>에서 기능을 확인할 수 있다.
 온라인 서버는 무료 서버에서 동작함으로 잠들어 있다면 10초 정도 로딩 시간이 걸릴 수 있다.
 최소한의 기능을 만들었다.
-기능을 업데이트할 예정이다.</p>
+기능을 업데이트할 예정이다.
+자! 이제 고객의 요구사항을 받을 때라고 생각한다:-).</p>
 
       <br>
-      <div>
+      <div style="float: right">
         <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="https://agvim.wordpress.com" title="또 다른 블로그, Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="또 다른 블로그, Afrontend Blog"></a>
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate" style="text-decoration: none"><span style="font-size:25px;">@</span> </a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -208,6 +217,7 @@
     <!-- You should properly set the path from the main file. -->
     
     <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/custom_gist.css">
     
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
@@ -224,8 +234,7 @@
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
-          <a href="/about" title="저는">About</a>
+          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
         </div>
       </div>
     </div>
@@ -235,10 +244,10 @@
           <div class="post_date">2018/02/22</div>
         </h1>
         <br>
-      <p>웹 UI를 만들때 적당한 CSS Framework를 사용하는 것이 좋은 선택이다.
-<a href="https://getbootstrap.com/">Bootstrap</a>과 <a href="https://foundation.zurb.com/">Foundation</a>은 유명하지만 기능이 너무 많다.
+      <p>웹 UI를 만들때 적당한 CSS Framework를 사용하는 것은 좋은 선택이다.
+<a href="https://getbootstrap.com/">Bootstrap</a>과 <a href="https://foundation.zurb.com/">Foundation</a>은 유명하지만 기능이 너무 많아서 내가 만들려는 작은 서비스와 어울리지 않았다.
 <code>mini css framework</code>를 <a href="https://www.google.co.kr/search?q=mini+css+framework&amp;oq=mini+css+framework&amp;aqs=chrome..69i57.4432j0j1&amp;sourceid=chrome&amp;ie=UTF-8">구글에서 검색</a>하여 <a href="https://bulma.io/">Bulma</a>를 발견했다.
-각 프레임워크가 자신을 어떻게 설명하는지 보자.</p>
+각 프레임워크가 자신을 어떻게 설명하는지 비교하자.</p>
 <p><em>Bootstrap</em></p>
 <blockquote>
 <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
@@ -253,7 +262,8 @@
 </blockquote>
 <p>Bootstrap의 설명이 가장 길다.
 우선 제외한다.
-파일 크기를 살펴보면 역시나 크기 차이가 많이 난다.
+그 다음 파일 크기를 비교한다.
+살펴보면 역시나 크기 차이가 많이 난다.
 파일 크기가 크다고 무조건 기능이 많다고 볼 순 없지만 작은 프로젝트에는 얼추 고려할 만하다.</p>
 <table>
 <thead>
@@ -304,11 +314,11 @@
 이 서비스를 개선하기 위해 기존에 사용하던 Bootstrap 대신 Bulma를 선택했다.</p>
 
       <br>
-      <div>
+      <div style="float: right">
         <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="https://agvim.wordpress.com" title="또 다른 블로그, Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="또 다른 블로그, Afrontend Blog"></a>
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate" style="text-decoration: none"><span style="font-size:25px;">@</span> </a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -370,6 +380,7 @@
     <!-- You should properly set the path from the main file. -->
     
     <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/custom_gist.css">
     
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
@@ -386,8 +397,7 @@
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
-          <a href="/about" title="저는">About</a>
+          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
         </div>
       </div>
     </div>
@@ -421,11 +431,11 @@ cordova emulate android
 </code></pre><p><img src="/images/small-cordova-data-card.png" alt="Cordova 예제" title="웹 데이터를 Cordova 안드로이드 앱으로 읽기"></p>
 
       <br>
-      <div>
+      <div style="float: right">
         <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="https://agvim.wordpress.com" title="또 다른 블로그, Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="또 다른 블로그, Afrontend Blog"></a>
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate" style="text-decoration: none"><span style="font-size:25px;">@</span> </a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -487,6 +497,7 @@ cordova emulate android
     <!-- You should properly set the path from the main file. -->
     
     <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/custom_gist.css">
     
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
@@ -503,8 +514,7 @@ cordova emulate android
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
-          <a href="/about" title="저는">About</a>
+          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
         </div>
       </div>
     </div>
@@ -521,7 +531,7 @@ cordova emulate android
 <blockquote>
 <p>JavaScript 만을 사용하여 사각형을 만들고 오른쪽으로 움직이시오”</p>
 </blockquote>
-<p>우선 사각형을 만들고 style을 사용하여 움직일 계획이었다.
+<p>사각형을 만들고 style을 사용하여 움직일 계획이었다.
 그런데 잠깐? 동적으로 HTML 코드를 삽입하는 방법이 정확히 기억이 안 나는 것이다.
 이런, 낭패였다.</p>
 <p>“jQuery를 사용해도 되나요?”</p>
@@ -550,7 +560,7 @@ $(<span class="hljs-string">".square"</span>).css(style);</code></pre>
 <h2 id="-">네모 움직이기</h2>
 <p>코딩 인터뷰 때는 이쯤에서 코딩이 중단되었다.
 객체를 사용하여 문제를 해결하라는 다른 요구 사항이 들어 왔기 때문이다.
-여기서는 마무리 하겠다.
+그 때 못한 코딩을 오늘 마무리 하겠다.
 우선 네모를 오른쪽으로 움직이기 위해 간단하게 마진을 사용한다.
 2초 후에 네모는 400px 오른쪽으로 이동한다.</p>
 <pre><code class="hljs javascript">$(<span class="hljs-string">"body"</span>).append(<span class="hljs-string">"&lt;div class='square'&gt;&lt;/div&gt;"</span>);
@@ -599,20 +609,21 @@ jQuery 코드를 제거하고 자바스크립트 코드로 변경했다.</p>
 <h2 id="html-css-">HTML과 CSS 사용</h2>
 <p>jQuery를 사용한 버전이나 사용하지 않은 버전 모두 동작은 동일하지만 모두 읽기가 너무 어렵다.
 JavaScript만을 사용했기 때문이다.
-같은 기능을 HTML과 CSS를 사용하여 개선할 수 있다.</p>
+같은 기능을 HTML, CSS를 사용하여 개선할 수 있다.</p>
 <iframe width="100%" height="300" src="//jsfiddle.net/Afrontend/3m6uku0o/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>그래도 HTML, CSS, JavaScript 이렇게 세개의 파일로 분리되는 것이 일반적이다.</p>
 <iframe width="100%" height="300" src="//jsfiddle.net/Afrontend/e1d6pvkr/7/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-<p><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299">전체 코드</a>는 따로 확인할 수 있다.</p>
+<p><a href="https://gist.github.com/afrontend/42d306ae2f8c0831a748d9b25f5be299">전체 코드</a>는 따로 확인할 수 있다.
+코딩 인터뷰 때 문제를 이렇게 풀었다면 합격했을까? 하는 아쉬움이 남는다.</p>
 
       <br>
-      <div>
+      <div style="float: right">
         <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="https://agvim.wordpress.com" title="또 다른 블로그, Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="또 다른 블로그, Afrontend Blog"></a>
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate" style="text-decoration: none"><span style="font-size:25px;">@</span> </a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -674,6 +685,7 @@ JavaScript만을 사용했기 때문이다.
     <!-- You should properly set the path from the main file. -->
     
     <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/custom_gist.css">
     
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
@@ -690,8 +702,7 @@ JavaScript만을 사용했기 때문이다.
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
-          <a href="/about" title="저는">About</a>
+          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
         </div>
       </div>
     </div>
@@ -706,15 +717,13 @@ JavaScript만을 사용했기 때문이다.
 <blockquote>
 <p>2,049 hits</p>
 </blockquote>
-<p>이 정보를 브라우저에서 그대로 표시하는 것보다는 같은 정보라도 보기 좋게 만드는 것이 그 데이터를 더 가치 있게 만든다고 생각한다.
-다이어그램 혹은 그래프를 사용하여 대시보드를 꾸미는 것은 비슷한 이유다.
-이 데이터를 HTML5로 바꾸고 브라우저로 읽을 수 있도록 웹 서비스로 만들었다.</p>
-<h2 id="-">블로그 읽은 횟수 서버에서 읽기</h2>
-<p>웹 서버로 Node.js를 사용할 예정이다.
-그런데 아래 명령어는 <a href="https://afrontend.github.io/posts/blog-hit-count/">터미널에서 웹 데이터를 읽는 방식</a>이다.
-그래서 같은 기능을 제공하는 자바스크립트 코드로 변경했다.</p>
+<p>같은 데이터라도 다이어그램 혹은 그래프등을 사용하여 꾸미면 더욱 이해하기 쉬우며
+이 정보를 웹에서 볼 수 있다면 여러 장치에서 읽을 수 있음으로 접근성도 좋아진다고 생각한다.
+이 데이터를 HTML5 형식으로 바꾸고 브라우저로 읽을 수 있도록 <a href="https://data-card.herokuapp.com/">웹 서비스</a>로 만드는 과정을 정리했다.</p>
+<h2 id="-node-js-">블로그 읽은 횟수를 Node.js를 사용하여 읽기</h2>
+<p>그런데 아래 명령어는 <a href="https://afrontend.github.io/posts/blog-hit-count/">터미널에서 웹 데이터를 읽는 방식</a>임으로 Node.js에서 바로 동작할 수 없음으로 자바스크립트 코드로 변경하겠다.</p>
 <pre><code>curl -s https://agvim.wordpress.com/ | hgrep -t &#39;#blog-stats-18 &gt; ul &gt; li&#39;
-</code></pre><p>아래 두 데이터가 사용되는 것은 같다.</p>
+</code></pre><p>터미널에서 읽는 방식이나 Node.js에서 읽는 방식이나 둘 다 아래  데이터를 사용하는 것은 같다.</p>
 <table>
 <thead>
 <tr>
@@ -770,6 +779,10 @@ Welcome to Express
 </code></pre><p>웹 서버를 중지하기 위하여 <kbd>Ctrl-c</kbd> 를 입력한다.</p>
 <p>위의 “Express” 문구는 routes/index.js 파일에 저장되어 있으며 이 파일은 views/layout.hbs 파일을 템블릿으로 사용한다.
 “Express” 문구 대신 readCount.js로 읽은 웹 데이터를 표시하기 위해 routes/index.js 파일 내용을 변경한다.</p>
+<pre><code class="hljs sh">data-card $ tree
+routes
+   index.js</code></pre>
+
 <pre><code class="hljs javascript"><span class="hljs-comment">//routes/index.js</span>
 <span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
 <span class="hljs-keyword">var</span> router = express.Router();
@@ -807,7 +820,12 @@ Welcome to 2,049 hits
 wget https://github.com/h5bp/html5-boilerplate/releases/download/6.0.1/html5-boilerplate_v6.0.1.zip
 unzip html5-boilerplate_v6.0.1.zip
 rm html5-boilerplate_v6.0.1.zip
-</code></pre><p>public/index.html 파일의 일부분을</p>
+</code></pre><pre><code class="hljs sh">data-card $ tree
+app.js
+public
+   index.html</code></pre>
+
+<p>public/index.html 파일의 일부분을</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello world! This is HTML5 Boilerplate.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
 
 <p>“2,049 hits” 로 대체하자. 이 후에 이 값을 웹에서 읽어온 값으로 대체할 예정이다.
@@ -821,6 +839,13 @@ HTML 태그를 <code>div</code>로 변경하고 클래스 이름을 추가한다
 클래스 이름 “data-card”에 적용할 css 파일을 만든다.
 크기를 고정하고 카드 모양으로 그림자를 넣었다.
 그리고 텍스트를 가운데 위치했다.</p>
+<pre><code class="hljs sh">data-card $ tree
+app.js
+public
+   css
+      box.css
+   index.html</code></pre>
+
 <pre><code><span class="hljs-comment">/*public/css/box.css*/</span>
 @<span class="hljs-keyword">import</span> url(<span class="hljs-string">'https://fonts.googleapis.com/css?family=Work+Sans'</span>);
 
@@ -857,6 +882,16 @@ Express는 직접 public/index.html 정적 파일을 수정하지 않는다.
 이 변수를 사용하여 웹 데이터가 전달된다.
 hbs 확장자는 이 파일이 <a href="http://handlebarsjs.com">handlebars</a> 템플릿임을 의미한다.
 public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮긴다.</p>
+<pre><code class="hljs sh">data-card $ tree
+app.js
+public
+   css
+      box.css
+routes
+   index.js
+ views
+    index.hbs</code></pre>
+
 <pre><code>mv public/index.html views/index.hbs
 </code></pre><p>views/index.hbs의 블로그 읽은 횟수 부분을 수정한다.</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"data-card"</span>&gt;</span>{{title}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
@@ -873,15 +908,15 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
 <li>웹 데이터 CSS로 꾸미기</li>
 </ul>
 <p><a href="http://expressjs.com/ko">Express</a>와 <a href="https://html5boilerplate.com">HTML5 Boilerplate</a>를 사용하여 작은 서비스를 만들었다.
-<a href="https://github.com/afrontend/data-card">전체 코드</a>를 다운로드하여 살펴보거나 <a href="https://data-card.herokuapp.com/">온라인에서 확인</a>할 수 있다.
+<a href="https://github.com/afrontend/data-card">전체 코드</a>를 다운로드하여 살펴보거나 <a href="https://data-card.herokuapp.com/">온라인</a>에서 확인할 수 있다.
 온라인 서버는 무료 서버에서 동작함으로 잠들어 있다면 10초 정도 로딩 시간이 걸릴 수 있다.</p>
 
       <br>
-      <div>
+      <div style="float: right">
         <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="https://agvim.wordpress.com" title="또 다른 블로그, Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="또 다른 블로그, Afrontend Blog"></a>
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate" style="text-decoration: none"><span style="font-size:25px;">@</span> </a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -943,6 +978,7 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
     <!-- You should properly set the path from the main file. -->
     
     <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/custom_gist.css">
     
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
@@ -959,8 +995,7 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
-          <a href="/about" title="저는">About</a>
+          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
         </div>
       </div>
     </div>
@@ -979,9 +1014,9 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
 <li>플러그인을 사용할 수 없다.</li>
 <li>광고가 붙는다.</li>
 </ul>
-<p>그리고 웹과 관련된 글만 따로 모으려는 목적도 있었다.
+<p>더불어 웹과 관련된 글만 따로 모으려는 목적도 있었다.
 그래서 워드프레스 대신 정적 사이트 생성기(<a href="https://davidwalsh.name/introduction-static-site-generators">Static Site Generator</a>)를 사용하기로 결정했다.
-워드프레스와 다르게</p>
+워드프레스와 다른 점이 있다.</p>
 <ul>
 <li>글의 내용을 서버에 저장하지 않는다.</li>
 <li>빌드에 의해서 생성된다.</li>
@@ -989,23 +1024,22 @@ public/index.html 파일을 views/index.hbs 파일로 이름을 변경하여 옮
 <li>온라인에서 글을 쓸 수 없다.</li>
 <li>서버와 통신이 없음으로 최소한의 웹 서버 기능만 필요하다.</li>
 </ul>
-<p>어떻게 보면 워드프레스에 비해 기능이 제한되는 것 같지만 꼭 필요한 기능만 내가 조립하는 즐거움이 있다.
-이 툴을 사용하여 생산된 파일을 특정 웹 서버에 올려서 블로그 서비스를 제공할 수 있다.
-<a href="https://pages.github.com">GitHub Pages</a>도 이런 파일을 올릴 수 있는 웹 서버의 한 예다.
+<p>어떻게 보면 워드프레스에 비해 기능이 제한되는 것 같지만 거꾸로 꼭 필요한 기능만 내가 조립하는 즐거움이 있다고도 볼 수 있다.
+이 툴을 사용하여 만들어진 파일을 웹 서버에 올려서 블로그 서비스를 제공할 수 있다.
+내가 선택한 <a href="https://pages.github.com">GitHub Pages</a>도 이런 파일을 올릴 수 있는 웹 서버의 한 예다.
 <strong>S</strong>tatic <strong>S</strong>ite <strong>G</strong>enerator는 종류가 많아서 <a href="https://www.staticgen.com/">고르는 게</a> 일이다.
-생각보다 여러 프로그래밍 언어로 개발되는 것을 보고 놀랐다.
-평소에 자바스크립트를 사용해서 그런지 자바스크립트로 만들어진 것을 찾게 되었다.
+생각보다 여러 프로그래밍 언어로 개발되는 것을 보고 놀랐는데 주로 자바스크립트를 사용해서 그런지 자바스크립트로 만들어진 것을 찾게 되었다.
 이전에 <a href="https://agvim.wordpress.com/2017/09/19/hubpress-%EC%84%A4%EC%B9%98%EB%A5%BC-%ED%8F%AC%EA%B8%B0%ED%95%9C-%EC%9D%B4%EC%9C%A0/">HubPress 설치에 실패</a>했고 다시 <a href="https://hexo.io/ko/index.html">Hexo</a>에 도전했다.
-Hexo는 워드프레스 테마를 보는 느낌이어서 친숙했지만 소스 코드의 동작하는 모습이 금방 눈에 들어오지 않아서 좀 더 이해하기 쉬운 <a href="http://www.metalsmith.io/">Metalsmith</a>로 변경했다.</p>
+Hexo는 워드프레스 테마를 보는 느낌이어서 친숙했지만 소스 코드의 동작하는 모습이 금방 눈에 들어오지 않아서 결국 좀 더 이해하기 쉬운 <a href="http://www.metalsmith.io/">Metalsmith</a>로 변경했다.</p>
 <h2 id="metalsmith">Metalsmith</h2>
 <p><a href="http://www.metalsmith.io/">Metalsmith</a>는 정말로 작다.
 처음 자바스크립트를 만났을 때의 느낌 딱 그것이다
-자바스크립트 코드가 본래 짧은데 더욱이 Metalsmith는 약 400라인이다.
-대부분의 기능을 플러그인에서 찾으라고 한다.
+Metalsmith의 자바스크립트 코드는 약 400라인이다.
+최소한의 기능만 가지고 나머지는 플러그인을 통해서 지원하는 방식이다.
 플러그인을 사용하는 방식이 <a href="http://expressjs.com/ko/">Express</a>에서 미들웨어 사용하는 방식과 비슷하다.
 파이프라인으로 지나가는 파일들을 각각의 플러그인 함수가 처리하는 방법으로 동작하는데 Metalsmith chain이라고 한다.
 어떤 플러그인을 적용할지 결정하면 된다.
-4개의 Node.js 모듈과 단, 하나의 자바스크립트에서 시작한다. 모듈은 미리 설치가 필요하다.</p>
+4개의 Node.js 모듈과 하나의 자바스크립트에서 시작한다.</p>
 <pre><code>npm install metalsmith metalsmith-layouts metalsmith-permalinks metalsmith-markdown
 </code></pre><p>특별한 명령어 없이 노드에서 수행하면 된다.
 <a href="https://github.com/segmentio/metalsmith/blob/master/examples/static-site/index.js">index.js</a> 이름도 임의로 정하면 된다.
@@ -1020,11 +1054,11 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
 당신이 보고 있는 이 블로그가 그 결과다.</p>
 
       <br>
-      <div>
+      <div style="float: right">
         <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="https://agvim.wordpress.com" title="또 다른 블로그, Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="또 다른 블로그, Afrontend Blog"></a>
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate" style="text-decoration: none"><span style="font-size:25px;">@</span> </a>
       </div>
       <br>
       <div id="disqus_thread"></div>
@@ -1086,6 +1120,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
     <!-- You should properly set the path from the main file. -->
     
     <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/custom_gist.css">
     
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81660498-2"></script>
@@ -1102,8 +1137,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">Home</a>
-          <a href="/about" title="저는">About</a>
+          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
         </div>
       </div>
     </div>
@@ -1228,11 +1262,11 @@ Curl의 두 번째 인자가 웹 페이지 주소이고 hgrep의 두 번째 인�
 개인 툴 박스에 넣어두기에 딱이다.</p>
 
       <br>
-      <div>
+      <div style="float: right">
         <a href="https://github.com/afrontend" title="GitHub"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2015/08/github-mark-32px.png" alt="github.com/afrontend"></a>&nbsp;<a href="https://github.com/afrontend" title="GitHub"></a>
-        <a href="https://agvim.wordpress.com" title="Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="Afrontend Blog"></a>
-        <span style="font-size:25px;">@</span> <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate"></a>
+        <a href="https://agvim.wordpress.com" title="또 다른 블로그, Afrontend Blog"><img style="width:20px;height:20px;" src="https://agvim.files.wordpress.com/2017/10/wordpress-logo-32-blue.png" alt="https://agvim.wordpress.com/"></a>&nbsp;<a href="https://agvim.wordpress.com/" title="또 다른 블로그, Afrontend Blog"></a>
         <a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"><img style="width:20px;height:20px;" src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/AfrontendWebData" title="피드 구독하기" rel="alternate"></a>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=AfrontendWebData&loc=en_US" title="이메일로 글을 받아 볼 수 있어요" rel="alternate" style="text-decoration: none"><span style="font-size:25px;">@</span> </a>
       </div>
       <br>
       <div id="disqus_thread"></div>
