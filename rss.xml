@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웹 읽고 쓰고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 27 Feb 2018 10:51:27 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 01 Mar 2018 06:07:19 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>동네 도서관에서 책 찾기 - 웹 읽고 쓰고</title>
+    <title>동네 도서관에서 책 찾기 - 웨비고</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웹 읽고 쓰고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:title" content="웨비고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -48,7 +48,11 @@
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
+          <a href="/index.html" title="웨비고">모든 글</a>
+          &nbsp;&bull;&nbsp;
+          <a href="/about" title="저는">저는</a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://afrontend.github.io/rss" title="RSS">RSS</a>
         </div>
       </div>
     </div>
@@ -187,14 +191,14 @@
 ]]></description><link>https://afrontend.github.io/posts/dongne_with_bulma</link><guid isPermaLink="true">https://afrontend.github.io/posts/dongne_with_bulma</guid><pubDate>Sun, 25 Feb 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Bulma를 선택한 이유]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>Bulma를 선택한 이유 - 웹 읽고 쓰고</title>
+    <title>Bulma를 선택한 이유 - 웨비고</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웹 읽고 쓰고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:title" content="웨비고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -234,7 +238,11 @@
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
+          <a href="/index.html" title="웨비고">모든 글</a>
+          &nbsp;&bull;&nbsp;
+          <a href="/about" title="저는">저는</a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://afrontend.github.io/rss" title="RSS">RSS</a>
         </div>
       </div>
     </div>
@@ -350,14 +358,14 @@
 ]]></description><link>https://afrontend.github.io/posts/bulma</link><guid isPermaLink="true">https://afrontend.github.io/posts/bulma</guid><pubDate>Thu, 22 Feb 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Cordova 사용하여 웹 데이터 읽기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>Cordova 사용하여 웹 데이터 읽기 - 웹 읽고 쓰고</title>
+    <title>Cordova 사용하여 웹 데이터 읽기 - 웨비고</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웹 읽고 쓰고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:title" content="웨비고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -397,7 +405,11 @@
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
+          <a href="/index.html" title="웨비고">모든 글</a>
+          &nbsp;&bull;&nbsp;
+          <a href="/about" title="저는">저는</a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://afrontend.github.io/rss" title="RSS">RSS</a>
         </div>
       </div>
     </div>
@@ -467,14 +479,14 @@ cordova emulate android
 ]]></description><link>https://afrontend.github.io/posts/cordova-data-card</link><guid isPermaLink="true">https://afrontend.github.io/posts/cordova-data-card</guid><pubDate>Wed, 25 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>JavaScript 만으로 네모 굴리기 - 웹 읽고 쓰고</title>
+    <title>JavaScript 만으로 네모 굴리기 - 웨비고</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웹 읽고 쓰고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:title" content="웨비고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -514,7 +526,11 @@ cordova emulate android
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
+          <a href="/index.html" title="웨비고">모든 글</a>
+          &nbsp;&bull;&nbsp;
+          <a href="/about" title="저는">저는</a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://afrontend.github.io/rss" title="RSS">RSS</a>
         </div>
       </div>
     </div>
@@ -655,14 +671,14 @@ JavaScript만을 사용했기 때문이다.
 ]]></description><link>https://afrontend.github.io/posts/roll-a-square-with-the-javascript</link><guid isPermaLink="true">https://afrontend.github.io/posts/roll-a-square-with-the-javascript</guid><pubDate>Thu, 12 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>웹 데이터를 카드 모양으로 나타내기 - 웹 읽고 쓰고</title>
+    <title>웹 데이터를 카드 모양으로 나타내기 - 웨비고</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웹 읽고 쓰고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:title" content="웨비고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -702,7 +718,11 @@ JavaScript만을 사용했기 때문이다.
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
+          <a href="/index.html" title="웨비고">모든 글</a>
+          &nbsp;&bull;&nbsp;
+          <a href="/about" title="저는">저는</a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://afrontend.github.io/rss" title="RSS">RSS</a>
         </div>
       </div>
     </div>
@@ -948,14 +968,14 @@ routes
 ]]></description><link>https://afrontend.github.io/posts/data-card</link><guid isPermaLink="true">https://afrontend.github.io/posts/data-card</guid><pubDate>Sat, 07 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[정적 사이트 생성기 - Metalsmith]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>정적 사이트 생성기 - Metalsmith - 웹 읽고 쓰고</title>
+    <title>정적 사이트 생성기 - Metalsmith - 웨비고</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웹 읽고 쓰고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:title" content="웨비고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -995,7 +1015,11 @@ routes
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
+          <a href="/index.html" title="웨비고">모든 글</a>
+          &nbsp;&bull;&nbsp;
+          <a href="/about" title="저는">저는</a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://afrontend.github.io/rss" title="RSS">RSS</a>
         </div>
       </div>
     </div>
@@ -1090,14 +1114,14 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
 ]]></description><link>https://afrontend.github.io/posts/metalsmith</link><guid isPermaLink="true">https://afrontend.github.io/posts/metalsmith</guid><pubDate>Fri, 06 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[블로그 히트 카운트 읽기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>블로그 히트 카운트 읽기 - 웹 읽고 쓰고</title>
+    <title>블로그 히트 카운트 읽기 - 웨비고</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웹 읽고 쓰고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 연습">
+    <meta property="og:title" content="웨비고">
+    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -1137,7 +1161,11 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 읽고 쓰고">모든 글</a>&nbsp;&bull;&nbsp;<a href="/about" title="저는">저는</a>
+          <a href="/index.html" title="웨비고">모든 글</a>
+          &nbsp;&bull;&nbsp;
+          <a href="/about" title="저는">저는</a>
+          &nbsp;&bull;&nbsp;
+          <a href="https://afrontend.github.io/rss" title="RSS">RSS</a>
         </div>
       </div>
     </div>
