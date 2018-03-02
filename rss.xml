@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 01 Mar 2018 10:12:18 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 02 Mar 2018 10:14:28 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 웨비고</title>
@@ -62,8 +62,8 @@
           <div class="post_date">2018/02/25</div>
         </h1>
         <br>
-      <p>동네 도서관에서 책 찾기 <a href="https://dongne.herokuapp.com/">웹 서비스</a>를 만들어 사용하고 있었는데 불편해서 수정했다.
-그 과정에 무엇이 불편했고 어떻게 수정했는지 정리했다.</p>
+      <p>동네 도서관에서 책 찾기 <a href="https://dongne.herokuapp.com/">웹 서비스</a>를 만들어 사용하고 있었는데 불편했다.
+무엇이 불편했고 어떻게 수정했는지 정리했다.</p>
 <h2 id="-">불편한 점</h2>
 <ul>
 <li>책 이름을 입력한 후 나타나는 회색 바탕의 도서관 이름들의 의미가 분명하지 않다.</li>
@@ -119,8 +119,44 @@
 <li><a href="https://dlserver.herokuapp.com/libraryList">https://dlserver.herokuapp.com/libraryList</a></li>
 <li><a href="https://dlserver.herokuapp.com/?title=javascript&amp;libraryName=판교">https://dlserver.herokuapp.com/?title=javascript&amp;libraryName=판교</a></li>
 </ul>
-<p>접근 코드는 아래와 같으며</p>
-<script src="https://gist.github.com/afrontend/70fabb3b737bdf3ac0f6e50ec66c4cd1.js"></script>
+<p>이 API를 사용하는 저바스크립트 <a href="https://github.com/afrontend/dlserver/blob/1b66caabf360feac48dd9eefa6cda1d8459a26ff/public/app.js#L13-L49">코드</a>는 아래와 같으며</p>
+<pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getLibrary</span>(<span class="hljs-params">option, callback</span>) </span>{
+  $http({
+    <span class="hljs-attr">method</span>: <span class="hljs-string">'GET'</span>,
+    <span class="hljs-attr">url</span>: <span class="hljs-string">'/'</span>,
+    <span class="hljs-attr">timeout</span>: <span class="hljs-number">30000</span>,
+    <span class="hljs-attr">params</span>: {
+      <span class="hljs-attr">title</span>: option.title,
+      <span class="hljs-attr">libraryName</span>: option.libraryName
+    }
+  }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">successCallback</span>(<span class="hljs-params">response</span>) </span>{
+    <span class="hljs-keyword">if</span>(callback) {
+      callback(<span class="hljs-literal">null</span>, response.data);
+    }
+  }, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">errorCallback</span>(<span class="hljs-params">response</span>) </span>{
+    <span class="hljs-keyword">if</span>(response.status === <span class="hljs-number">-1</span>) {
+      callback({
+        <span class="hljs-attr">msg</span>: <span class="hljs-string">'검색에 실패했습니다.'</span>
+      }, response.data);
+    }
+    $log.log(<span class="hljs-string">'status: '</span> + response.status);
+    $log.log(<span class="hljs-string">'statusText: '</span> + response.statusText);
+  });
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getLibraryNames</span>(<span class="hljs-params">callback</span>) </span>{
+  $http({
+    <span class="hljs-attr">method</span>: <span class="hljs-string">'GET'</span>,
+    <span class="hljs-attr">url</span>: <span class="hljs-string">'/libraryList'</span>
+  }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">successCallback</span>(<span class="hljs-params">response</span>) </span>{
+    <span class="hljs-keyword">if</span>(callback) {
+      callback(response.data);
+    }
+  }, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">errorCallback</span>(<span class="hljs-params">response</span>) </span>{
+    $log.log(<span class="hljs-string">'status: '</span> + response.status);
+    $log.log(<span class="hljs-string">'statusText: '</span> + response.statusText);
+  });
+}</code></pre>
 
 <p>결과는 모두 JSON 형식이다.</p>
 <pre><code class="hljs json">[
