@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 02 Mar 2018 10:14:28 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 02 Mar 2018 10:32:14 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 웨비고</title>
@@ -774,10 +774,12 @@ JavaScript만을 사용했기 때문이다.
 <p>2,049 hits</p>
 </blockquote>
 <p>같은 데이터라도 다이어그램 혹은 그래프등을 사용하여 꾸미면 더욱 이해하기 쉬우며
-이 정보를 웹에서 볼 수 있다면 여러 장치에서 읽을 수 있음으로 접근성도 좋아진다고 생각한다.
-이 데이터를 HTML5 형식으로 바꾸고 브라우저로 읽을 수 있도록 <a href="https://data-card.herokuapp.com/">웹 서비스</a>로 만드는 과정을 정리했다.</p>
+이 정보를 웹에서 볼 수 있다면 여러 장치에서 읽을 수 있어서 접근성도 좋아진다고 생각한다.
+그래서 이 데이터를 HTML5 형식으로 바꾸고 브라우저로 읽을 수 있도록 <a href="https://data-card.herokuapp.com/">웹 서비스</a>로 만들려고 한다.
+그 과정을 정리했다.</p>
 <h2 id="-node-js-">블로그 읽은 횟수를 Node.js를 사용하여 읽기</h2>
-<p>그런데 아래 명령어는 <a href="https://afrontend.github.io/posts/blog-hit-count/">터미널에서 웹 데이터를 읽는 방식</a>임으로 Node.js에서 바로 동작할 수 없음으로 자바스크립트 코드로 변경하겠다.</p>
+<p>아래 명령어는 <a href="https://afrontend.github.io/posts/blog-hit-count/">터미널에서 웹 데이터를 읽는 방식</a>임으로 Node.js에서 바로 동작할 수 없다.
+우선 자바스크립트 코드로 변경하겠다.</p>
 <pre><code>curl -s https://agvim.wordpress.com/ | hgrep -t &#39;#blog-stats-18 &gt; ul &gt; li&#39;
 </code></pre><p>터미널에서 읽는 방식이나 Node.js에서 읽는 방식이나 둘 다 아래  데이터를 사용하는 것은 같다.</p>
 <table>
