@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 03 Mar 2018 11:08:48 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 04 Mar 2018 12:06:13 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 웨비고</title>
@@ -58,11 +58,9 @@
     </div>
     <div class="post">
         <br>
-        <div class="post_title">
-          동네 도서관에서 책 찾기
-          <br>
-          <div class="post_date">2018-02-25</div>
-        </div>
+        <div class="post_title"> 동네 도서관에서 책 찾기 </div>
+        <!--<div class="post_line"></div>-->
+        <div class="post_date">2018-02-25</div>
         <br>
       <div class="post_content">
         <p>동네 도서관에서 책 찾기 <a href="https://dongne.herokuapp.com/">웹 서비스</a>를 만들어 사용하고 있었는데 불편했다.
@@ -284,11 +282,9 @@
     </div>
     <div class="post">
         <br>
-        <div class="post_title">
-          Bulma를 선택한 이유
-          <br>
-          <div class="post_date">2018-02-22</div>
-        </div>
+        <div class="post_title"> Bulma를 선택한 이유 </div>
+        <!--<div class="post_line"></div>-->
+        <div class="post_date">2018-02-22</div>
         <br>
       <div class="post_content">
         <p>웹 UI를 만들때 적당한 CSS Framework를 사용하는 것은 좋은 선택이다.
@@ -455,11 +451,9 @@
     </div>
     <div class="post">
         <br>
-        <div class="post_title">
-          Cordova 사용하여 웹 데이터 읽기
-          <br>
-          <div class="post_date">2017-10-25</div>
-        </div>
+        <div class="post_title"> Cordova 사용하여 웹 데이터 읽기 </div>
+        <!--<div class="post_line"></div>-->
+        <div class="post_date">2017-10-25</div>
         <br>
       <div class="post_content">
         <p><a href="https://afrontend.github.io/posts/data-card/">이전 글</a>에서 Node.js 서버를 사용하여 웹 데이터를 읽고 이 값을 브라우저에서 확인했다.
@@ -580,11 +574,9 @@ cordova emulate android
     </div>
     <div class="post">
         <br>
-        <div class="post_title">
-          JavaScript 만으로 네모 굴리기
-          <br>
-          <div class="post_date">2017-10-12</div>
-        </div>
+        <div class="post_title"> JavaScript 만으로 네모 굴리기 </div>
+        <!--<div class="post_line"></div>-->
+        <div class="post_date">2017-10-12</div>
         <br>
       <div class="post_content">
         <h2 id="-">네모 만들기</h2>
@@ -776,11 +768,9 @@ JavaScript만을 사용했기 때문이다.
     </div>
     <div class="post">
         <br>
-        <div class="post_title">
-          웹 데이터를 카드 모양으로 나타내기
-          <br>
-          <div class="post_date">2017-10-07</div>
-        </div>
+        <div class="post_title"> 웹 데이터를 카드 모양으로 나타내기 </div>
+        <!--<div class="post_line"></div>-->
+        <div class="post_date">2017-10-07</div>
         <br>
       <div class="post_content">
         <h2 id="-">웹 데이터 표시</h2>
@@ -1079,11 +1069,9 @@ routes
     </div>
     <div class="post">
         <br>
-        <div class="post_title">
-          정적 사이트 생성기 - Metalsmith
-          <br>
-          <div class="post_date">2017-10-06</div>
-        </div>
+        <div class="post_title"> 정적 사이트 생성기 - Metalsmith </div>
+        <!--<div class="post_line"></div>-->
+        <div class="post_date">2017-10-06</div>
         <br>
       <div class="post_content">
         <h2 id="static-site-generator">Static Site Generator</h2>
@@ -1229,11 +1217,9 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
     </div>
     <div class="post">
         <br>
-        <div class="post_title">
-          블로그 히트 카운트 읽기
-          <br>
-          <div class="post_date">2017-09-26</div>
-        </div>
+        <div class="post_title"> 블로그 히트 카운트 읽기 </div>
+        <!--<div class="post_line"></div>-->
+        <div class="post_date">2017-09-26</div>
         <br>
       <div class="post_content">
         <h2 id="-">웹 데이터 읽기</h2>
