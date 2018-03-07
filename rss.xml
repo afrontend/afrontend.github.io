@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 04 Mar 2018 12:06:13 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 07 Mar 2018 11:07:21 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 웨비고</title>
@@ -1232,7 +1232,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
 그러면 클립보드에 CSS Selector가 저장된다.
 이제 웹 페이지 주소와 이렇게 얻은 CSS Selector를 사용하여 웹 데이터를 읽을 수 있다.</p>
 <h2 id="-">블로그 히트 카운트 읽기</h2>
-<p>다른 <a href="https://agvim.wordpress.com/" title="JavaScript, Python, Vim, Ubuntu 개발 블로그">블로그</a>에도 글을 쓰고 있는데 다른 사람들이 읽은 카운트가 올라가는 것을 보고 즐기고 있다.
+<p>다른 <a href="https://agvim.wordpress.com/" title="JavaScript, Python, Terminal, Vim, Ubuntu 개발 블로그">블로그</a>에도 글을 쓰고 있는데 다른 사람들이 읽은 카운트가 올라가는 것을 보고 즐기고 있다.
 이 카운트는 단순히 누군가 한번 블로그를 읽은 정보만을 제공함으로
 내가 쓴 글이 도움되었는지 알 수는 없다.
 댓글이 없는 것으로 보아 2000번의 방문은 스쳐 지나간 걸로 짐작하고 있다.
@@ -1280,7 +1280,7 @@ Curl의 두 번째 인자가 웹 페이지 주소이고 hgrep의 두 번째 인�
 성급하게 결론을 내리면 이들은 자신을 <strong>간단</strong>하다고 자랑한다는 것을 알 수 있다.
 실제로 그렇다는 것이 아니니 과정만 즐기길 바란다.
 각 명령어들은 한 가지 일만 처리함으로 이해하기 쉽다.
-명령어 외에 <a href="https://agvim.wordpress.com/category/webdata/">다른 방법으로 웹 데이터를 읽는 방법</a>도 참조하길 바란다.</p>
+명령어 외에 <a href="https://agvim.wordpress.com/category/webdata/" title="웹 데이터를 읽는 4가지 방법">다른 방법으로 웹 데이터를 읽는 방법</a>도 참조하길 바란다.</p>
 <table>
 <thead>
 <tr>
@@ -1332,9 +1332,9 @@ Curl의 두 번째 인자가 웹 페이지 주소이고 hgrep의 두 번째 인�
 </tbody>
 </table>
 <h2 id="-">마무리</h2>
-<p>웹 스크랩 혹은 웹 크롤링등의 고급적인 방법을 사용하지 않고 고급 프로그래밍 언어를 사용하지 않아도 작은 명령어들을 함께 사용하여 웹 데이터를 가공할 수 있다.
+<p>웹 크롤링이나 고급 프로그래밍 언어를 사용하지 않아도 작은 명령어들을 함께 사용하여 웹 데이터를 가공할 수 있다.
 한번 만들어 놓으면 자주 사용할 수 있으며 시간순으로 저장하여 변화 과정을 추적할 수도 있다.
-개인 툴 박스에 넣어두기에 딱이다.</p>
+브라우저 없이 웹 데이터 읽기 방법은 개인 툴 박스에 넣어두기에 딱이다.</p>
 
       </div>
       <br>
