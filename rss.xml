@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 11 Mar 2018 03:19:04 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 11 Mar 2018 04:01:49 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 웨비고</title>
@@ -83,7 +83,7 @@
 <li>책 제목의 일부를 입력한다.</li>
 </ol>
 <h2 id="-ui">더욱 단순한 UI</h2>
-<p>CSS 프레임워크로 이전에 사용하던 Bootstrap 대신 <a href="https://bulma.io/">Bulma</a>를 <a href="https://afrontend.github.io/posts/bulma/">사용하기로 결정</a>했다.
+<p>CSS 프레임워크로 이전에 사용하던 Bootstrap 대신 <a href="https://bulma.io/">Bulma</a>를 <a href="https://agvim.wordpress.com/2018/02/22/bulma/">사용하기로 결정</a>했다.
 또한, UI를 새롭게 만들기 위해 <a href="https://github.com/afrontend/dongnelibraryspa">도서관 검색 서비스</a>에서 <a href="https://github.com/afrontend/dlserver">웹 API 서비스</a>를 따로 <a href="https://agvim.wordpress.com/2017/09/20/web-api-check-if-a-library-book-was-rented/">분리</a>했다.
 이것을 사용하여 검색 UI를 다시 만들 생각이다.
 사용자에게 보여줄 영역은 세 가지다</p>
