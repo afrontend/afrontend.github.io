@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 14 Mar 2018 13:18:39 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 14 Mar 2018 13:27:57 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 웨비고</title>
@@ -48,7 +48,7 @@
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">모든 글</a>
+          <a href="/index.html" title="웹 데이터를 읽고 좋게 보여주는 기술">모든 글</a>
           &nbsp;&bull;&nbsp;
           <a href="/about" title="">저는</a>
           &nbsp;&bull;&nbsp;
@@ -262,7 +262,7 @@ border-radius: 5px; margin-left: 7px; margin-top: 10px" width="677" height="361"
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">모든 글</a>
+          <a href="/index.html" title="웹 데이터를 읽고 좋게 보여주는 기술">모든 글</a>
           &nbsp;&bull;&nbsp;
           <a href="/about" title="">저는</a>
           &nbsp;&bull;&nbsp;
@@ -456,7 +456,7 @@ JavaScript만을 사용했기 때문이다.
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">모든 글</a>
+          <a href="/index.html" title="웹 데이터를 읽고 좋게 보여주는 기술">모든 글</a>
           &nbsp;&bull;&nbsp;
           <a href="/about" title="">저는</a>
           &nbsp;&bull;&nbsp;
@@ -757,7 +757,7 @@ routes
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">모든 글</a>
+          <a href="/index.html" title="웹 데이터를 읽고 좋게 보여주는 기술">모든 글</a>
           &nbsp;&bull;&nbsp;
           <a href="/about" title="">저는</a>
           &nbsp;&bull;&nbsp;
@@ -905,7 +905,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
     <div class="header_bar" >
       <div class="header">
         <div class="float-left" >
-          <a href="/index.html" title="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">모든 글</a>
+          <a href="/index.html" title="웹 데이터를 읽고 좋게 보여주는 기술">모든 글</a>
           &nbsp;&bull;&nbsp;
           <a href="/about" title="">저는</a>
           &nbsp;&bull;&nbsp;
