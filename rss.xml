@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 15 Mar 2018 12:37:50 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 20 Mar 2018 13:20:09 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 웨비고</title>
@@ -60,7 +60,7 @@
         <br>
         <div class="post_title"> 동네 도서관에서 책 찾기 </div>
         <!--<div class="post_line"></div>-->
-        <div class="post_date">2018-02-25</div>
+        <div class="post_date">2018-02-25 by <a href="/about">Afrontend</a></div>
         <br>
       <div class="post_content">
         <!--![수정전 동네 도서관 화면](/images/dongne.gif "조금 불편한 서비스")-->
@@ -272,7 +272,7 @@ border-radius: 5px; margin-left: 7px; margin-top: 10px" width="628" height="361"
         <br>
         <div class="post_title"> JavaScript 만으로 네모 굴리기 </div>
         <!--<div class="post_line"></div>-->
-        <div class="post_date">2017-10-12</div>
+        <div class="post_date">2017-10-12 by <a href="/about">Afrontend</a></div>
         <br>
       <div class="post_content">
         <h2 id="-">네모 만들기</h2>
@@ -466,7 +466,7 @@ JavaScript만을 사용했기 때문이다.
         <br>
         <div class="post_title"> 웹 데이터를 카드 모양으로 나타내기 </div>
         <!--<div class="post_line"></div>-->
-        <div class="post_date">2017-10-07</div>
+        <div class="post_date">2017-10-07 by <a href="/about">Afrontend</a></div>
         <br>
       <div class="post_content">
         <h2 id="-">웹 데이터 표시</h2>
@@ -767,7 +767,7 @@ routes
         <br>
         <div class="post_title"> 정적 사이트 생성기 - Metalsmith </div>
         <!--<div class="post_line"></div>-->
-        <div class="post_date">2017-10-06</div>
+        <div class="post_date">2017-10-06 by <a href="/about">Afrontend</a></div>
         <br>
       <div class="post_content">
         <h2 id="static-site-generator">Static Site Generator</h2>
@@ -915,7 +915,7 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
         <br>
         <div class="post_title"> 블로그 히트 카운트 읽기 </div>
         <!--<div class="post_line"></div>-->
-        <div class="post_date">2017-09-26</div>
+        <div class="post_date">2017-09-26 by <a href="/about">Afrontend</a></div>
         <br>
       <div class="post_content">
         <h2 id="-">웹 데이터 읽기</h2>
