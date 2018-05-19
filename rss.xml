@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[웨비고]]></title><description><![CDATA[웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 20 Mar 2018 13:25:01 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[한 그릇]]></title><description><![CDATA[웹 읽고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 19 May 2018 10:08:09 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>동네 도서관에서 책 찾기 - 웨비고</title>
+    <title>동네 도서관에서 책 찾기 - 한 그릇</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웨비고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
+    <meta property="og:title" content="한 그릇">
+    <meta property="og:description" content="웹 읽고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -213,14 +213,14 @@ border-radius: 5px; margin-left: 7px; margin-top: 10px" width="628" height="361"
 ]]></description><link>https://afrontend.github.io/posts/dongne_with_bulma</link><guid isPermaLink="true">https://afrontend.github.io/posts/dongne_with_bulma</guid><pubDate>Sun, 25 Feb 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[JavaScript 만으로 네모 굴리기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>JavaScript 만으로 네모 굴리기 - 웨비고</title>
+    <title>JavaScript 만으로 네모 굴리기 - 한 그릇</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웨비고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
+    <meta property="og:title" content="한 그릇">
+    <meta property="og:description" content="웹 읽고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -407,14 +407,14 @@ JavaScript만을 사용했기 때문이다.
 ]]></description><link>https://afrontend.github.io/posts/roll-a-square-with-the-javascript</link><guid isPermaLink="true">https://afrontend.github.io/posts/roll-a-square-with-the-javascript</guid><pubDate>Thu, 12 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[웹 데이터를 카드 모양으로 나타내기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>웹 데이터를 카드 모양으로 나타내기 - 웨비고</title>
+    <title>웹 데이터를 카드 모양으로 나타내기 - 한 그릇</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웨비고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
+    <meta property="og:title" content="한 그릇">
+    <meta property="og:description" content="웹 읽고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -708,14 +708,14 @@ routes
 ]]></description><link>https://afrontend.github.io/posts/data-card</link><guid isPermaLink="true">https://afrontend.github.io/posts/data-card</guid><pubDate>Sat, 07 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[정적 사이트 생성기 - Metalsmith]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>정적 사이트 생성기 - Metalsmith - 웨비고</title>
+    <title>정적 사이트 생성기 - Metalsmith - 한 그릇</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웨비고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
+    <meta property="og:title" content="한 그릇">
+    <meta property="og:description" content="웹 읽고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
@@ -856,14 +856,14 @@ Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 �
 ]]></description><link>https://afrontend.github.io/posts/metalsmith</link><guid isPermaLink="true">https://afrontend.github.io/posts/metalsmith</guid><pubDate>Fri, 06 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[블로그 히트 카운트 읽기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
-    <title>블로그 히트 카운트 읽기 - 웨비고</title>
+    <title>블로그 히트 카운트 읽기 - 한 그릇</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msvalidate.01" content="20E9379AD2F60C867A2E376C373DD815" />
     <meta name="naver-site-verification" content="a8a8aaf072a0436c79f3d6cdacb82112b253e81f"/>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="웨비고">
-    <meta property="og:description" content="웹 데이터를 읽고 쓰고 보기 좋게 보여주는 기술">
+    <meta property="og:title" content="한 그릇">
+    <meta property="og:description" content="웹 읽고 보기 좋게 보여주는 기술">
     <meta property="og:image" content="https://afrontend.github.io/images/afrontend.png">
     <meta property="og:url" content="https://afrontend.github.io">
     
