@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[한 그릇]]></title><description><![CDATA[웹 읽고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sun, 27 May 2018 09:35:05 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[한 그릇]]></title><description><![CDATA[웹 읽고 보기 좋게 보여주는 기술]]></description><link>https://afrontend.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Sat, 01 Dec 2018 14:24:31 GMT</lastBuildDate><atom:link href="https://afrontend.github.io/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[동네 도서관에서 책 찾기]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
   <head>
     <title>동네 도서관에서 책 찾기 - 한 그릇</title>
@@ -67,6 +67,7 @@
 <!--![수정전 동네 도서관 화면 1](/images/dongne1.png "검색 전 첫 화면" )-->
 <!--![수정전 동네 도서관 화면 2](/images/dongne2.png "검색어 입력 후")-->
 <!--![수정전 동네 도서관 화면 3](/images/dongne3.png "검색 결과")-->
+
 <p>동네 도서관에서 책 찾기 <a href="https://dongne.herokuapp.com/">웹 서비스</a>를 만들어 사용하고 있었는데 불편했다.
 무엇이 불편했고 어떻게 수정했는지 정리했다.
 우선, 책 이름을 입력한 후 나타나는 회색 바탕의 도서관 이름들의 의미가 분명하지 않다.
@@ -104,7 +105,7 @@ border-radius: 5px; margin-left: 7px; margin-top: 10px" width="628" height="361"
 아래 두 개의 <a href="https://github.com/afrontend/dlserver">웹 API</a>를 <a href="https://github.com/afrontend/dlserver/blob/db5694b33cc8397f23db108a3416fd5a8b676e5c/public/app.js#L13-L51">사용</a>한다.</p>
 <ul>
 <li><a href="https://dlserver.herokuapp.com/libraryList">https://dlserver.herokuapp.com/libraryList</a></li>
-<li><a href="https://dlserver.herokuapp.com/?title=javascript&amp;libraryName=판교">https://dlserver.herokuapp.com/?title=javascript&amp;libraryName=판교</a></li>
+<li><a href="https://dlserver.herokuapp.com/?title=javascript&amp;libraryName=%ED%8C%90%EA%B5%90">https://dlserver.herokuapp.com/?title=javascript&amp;libraryName=판교</a></li>
 </ul>
 <p>이 API를 사용하는 저바스크립트 <a href="https://github.com/afrontend/dlserver/blob/1b66caabf360feac48dd9eefa6cda1d8459a26ff/public/app.js#L13-L49">코드</a>는 아래와 같으며</p>
 <pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getLibrary</span>(<span class="hljs-params">option, callback</span>) </span>{
@@ -481,8 +482,7 @@ JavaScript만을 사용했기 때문이다.
 <h2 id="-node-js-">블로그 읽은 횟수를 Node.js를 사용하여 읽기</h2>
 <p>아래 명령어는 <a href="https://afrontend.github.io/posts/blog-hit-count/">터미널에서 웹 데이터를 읽는 방식</a>임으로 Node.js에서 바로 동작할 수 없다.
 우선 자바스크립트 코드로 변경하겠다.</p>
-<pre><code>curl -s https://agvim.wordpress.com/ | hgrep -t &#39;#blog-stats-18 &gt; ul &gt; li&#39;
-</code></pre><p>터미널에서 읽는 방식이나 Node.js에서 읽는 방식이나 둘 다 아래  데이터를 사용하는 것은 같다.</p>
+<pre><code>curl -s https://agvim.wordpress.com/ | hgrep -t &#39;#blog-stats-18 &gt; ul &gt; li&#39;</code></pre><p>터미널에서 읽는 방식이나 Node.js에서 읽는 방식이나 둘 다 아래  데이터를 사용하는 것은 같다.</p>
 <table>
 <thead>
 <tr>
@@ -490,8 +490,7 @@ JavaScript만을 사용했기 때문이다.
 <th>값</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>URL</td>
 <td><a href="https://agvim.wordpress.com/">https://agvim.wordpress.com/</a></td>
 </tr>
@@ -499,8 +498,7 @@ JavaScript만을 사용했기 때문이다.
 <td>CSS selector</td>
 <td>#blog-stats-18 &gt; ul &gt; li</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>임의의 디렉토리에 아래 파일을 저장한다.</p>
 <pre><code class="hljs javascript"><span class="hljs-comment">// readCount.js</span>
 <span class="hljs-keyword">var</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">'request'</span>);
@@ -512,30 +510,22 @@ request(<span class="hljs-string">'https://agvim.wordpress.com/'</span>,
   });</code></pre>
 
 <p>테스트 전에 추가 모듈을 설치한다.</p>
-<pre><code>npm install request cheerio
-</code></pre><p>노드로 실행하면 블로그 읽은 횟수를 보여준다.</p>
+<pre><code>npm install request cheerio</code></pre><p>노드로 실행하면 블로그 읽은 횟수를 보여준다.</p>
 <pre><code>$ node readCount.js
-2,049 hits
-</code></pre><p>이 파일 일부 코드를 사용할 예정이다.</p>
+2,049 hits</code></pre><p>이 파일 일부 코드를 사용할 예정이다.</p>
 <h2 id="node-js-">Node.js 웹 서버</h2>
 <p>브라우저 접속을 지원하려면 웹 서버가 필요하다.
 웹 서버로 Node.js를 사용할 텐데 내장 모듈인 <code>http</code> 대신 <a href="http://expressjs.com/ko">Express</a> 모듈을 사용하겠다.
 <a href="https://nodejs.org/ko/">노드 설치</a>가 필요하다.
 프로젝트 디렉토리를 만든다.</p>
-<pre><code>mkdir /tmp/data-card &amp;&amp; cd /tmp/data-card
-</code></pre><p>전역으로 express 를 설치한다.</p>
-<pre><code>npm install express -g
-</code></pre><p>Express 초기 파일을 생성한다.</p>
-<pre><code>express --hbs
-</code></pre><p>Express가 사용할 모듈들을 설치한다.</p>
-<pre><code>npm install
-</code></pre><p>웹 서버를 수행하여 브라우저 접속을 확인한다.</p>
-<pre><code>npm start
-</code></pre><p><a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구를 확인할 수 있다.</p>
+<pre><code>mkdir /tmp/data-card &amp;&amp; cd /tmp/data-card</code></pre><p>전역으로 express 를 설치한다.</p>
+<pre><code>npm install express -g</code></pre><p>Express 초기 파일을 생성한다.</p>
+<pre><code>express --hbs</code></pre><p>Express가 사용할 모듈들을 설치한다.</p>
+<pre><code>npm install</code></pre><p>웹 서버를 수행하여 브라우저 접속을 확인한다.</p>
+<pre><code>npm start</code></pre><p><a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구를 확인할 수 있다.</p>
 <pre><code>Express
 
-Welcome to Express
-</code></pre><p>웹 서버를 중지하기 위하여 <kbd>Ctrl-c</kbd> 를 입력한다.</p>
+Welcome to Express</code></pre><p>웹 서버를 중지하기 위하여 <kbd>Ctrl-c</kbd> 를 입력한다.</p>
 <p>위의 “Express” 문구는 routes/index.js 파일에 저장되어 있으며 이 파일은 views/layout.hbs 파일을 템블릿으로 사용한다.
 “Express” 문구 대신 readCount.js로 읽은 웹 데이터를 표시하기 위해 routes/index.js 파일 내용을 변경한다.</p>
 <pre><code class="hljs sh">data-card $ tree
@@ -563,14 +553,11 @@ router.get(<span class="hljs-string">'/'</span>, <span class="hljs-function"><sp
 <span class="hljs-built_in">module</span>.exports = router;</code></pre>
 
 <p>사용할 모듈을 설치한다.</p>
-<pre><code>npm install request cheerio --save
-</code></pre><p>웹 서버를 다시 수행한다.</p>
-<pre><code>npm start
-</code></pre><p><a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구 대신 블로그 읽은 횟수를 확인할 수 있다.</p>
+<pre><code>npm install request cheerio --save</code></pre><p>웹 서버를 다시 수행한다.</p>
+<pre><code>npm start</code></pre><p><a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “Express” 문구 대신 블로그 읽은 횟수를 확인할 수 있다.</p>
 <pre><code>2,049 hits
 
-Welcome to 2,049 hits
-</code></pre><p>웹 서버를 중지하기 위하여 <kbd>Ctrl-c</kbd> 를 입력한다.</p>
+Welcome to 2,049 hits</code></pre><p>웹 서버를 중지하기 위하여 <kbd>Ctrl-c</kbd> 를 입력한다.</p>
 <h2 id="html5-">HTML5 페이지 준비</h2>
 <p>웹 서버에서 웹 데이터를 읽고 브라우저로 보여주는 기능이 완성되었다.
 이제 CSS을 사용하여 카드 모양으로 표시할 텐데 여러 HTML5 시작 코드 중에 <a href="https://html5boilerplate.com">HTML5 Boilerplate</a>를 선택했다.
@@ -578,8 +565,7 @@ Welcome to 2,049 hits
 <pre><code>cd public
 wget https://github.com/h5bp/html5-boilerplate/releases/download/6.0.1/html5-boilerplate_v6.0.1.zip
 unzip html5-boilerplate_v6.0.1.zip
-rm html5-boilerplate_v6.0.1.zip
-</code></pre><pre><code class="hljs sh">data-card $ tree
+rm html5-boilerplate_v6.0.1.zip</code></pre><pre><code class="hljs sh">data-card $ tree
 app.js
 public
    index.html</code></pre>
@@ -626,8 +612,7 @@ public
 
 <p>이제 다시 웹 서버를 수행한다.</p>
 <pre><code>cd /tmp/data-card
-npm start
-</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 카드 모양의 “2,049 hits” 문구를 확인할 수 있다.</p>
+npm start</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 카드 모양의 “2,049 hits” 문구를 확인할 수 있다.</p>
 <h2 id="-">웹에서 읽은 데이터를 브라우저에서 읽기</h2>
 <p>이제 남은 작업은 한 가지다.
 웹에서 읽은 데이터를 public/index.html 파일에 삽입하는 단계가 남았다.
@@ -651,13 +636,11 @@ routes
  views
     index.hbs</code></pre>
 
-<pre><code>mv public/index.html views/index.hbs
-</code></pre><p>views/index.hbs의 블로그 읽은 횟수 부분을 수정한다.</p>
+<pre><code>mv public/index.html views/index.hbs</code></pre><p>views/index.hbs의 블로그 읽은 횟수 부분을 수정한다.</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"data-card"</span>&gt;</span>{{title}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 
 <p>웹 서버를 수행한다.</p>
-<pre><code>npm start
-</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “2,049 hits” 보다 조금 많은 블로그 읽은 횟수를 확인할 수 있다.</p>
+<pre><code>npm start</code></pre><p>브라우저로 <a href="http://localhost:3000">http://localhost:3000</a> 로 접속하면 “2,049 hits” 보다 조금 많은 블로그 읽은 횟수를 확인할 수 있다.</p>
 <p><img src="/images/data-card.png" alt="블로그 읽은 횟수" title="웹 데이터 카드 모양으로 표시하기"></p>
 <h2 id="-">마무리</h2>
 <p>웹 데이터를 브라우저에서 읽을 수 있도록 여러 작업을 진행했다.</p>
@@ -805,12 +788,10 @@ Metalsmith의 자바스크립트 코드는 약 400라인이다.
 파이프라인으로 지나가는 파일들을 각각의 플러그인 함수가 처리하는 방법으로 동작하는데 Metalsmith chain이라고 한다.
 어떤 플러그인을 적용할지 결정하면 된다.
 4개의 Node.js 모듈과 하나의 자바스크립트에서 시작한다.</p>
-<pre><code>npm install metalsmith metalsmith-layouts metalsmith-permalinks metalsmith-markdown
-</code></pre><p>특별한 명령어 없이 노드에서 수행하면 된다.
+<pre><code>npm install metalsmith metalsmith-layouts metalsmith-permalinks metalsmith-markdown</code></pre><p>특별한 명령어 없이 노드에서 수행하면 된다.
 <a href="https://github.com/segmentio/metalsmith/blob/master/examples/static-site/index.js">index.js</a> 이름도 임의로 정하면 된다.
 Hexo 같은 생성기는 다운로드 받으면 바로 사용할 수 있는데 반해 Matalsmith는 이런 화면을 보려면 추가 작업이 더 필요하다.</p>
-<pre><code>node index.js
-</code></pre><h2 id="-">마무리</h2>
+<pre><code>node index.js</code></pre><h2 id="-">마무리</h2>
 <p>가입형 무료 워드프레스 기능과 비교하면 SSG는 기능이 부족하다.
 대신 쉽게 수정하고 그 동작 방식을 들여다 볼 수 있는 장점이 있다.
 대부분의 SSG가 그렇듯이 Metalsmith도 댓글 기능이 없다.
@@ -984,8 +965,7 @@ Curl의 두 번째 인자가 웹 페이지 주소이고 hgrep의 두 번째 인�
 <th>설명</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>curl -s <a href="https://www.staticgen.com/">https://www.staticgen.com/</a></td>
 <td>웹 페이지를 읽는다.</td>
 </tr>
@@ -1025,8 +1005,7 @@ Curl의 두 번째 인자가 웹 페이지 주소이고 hgrep의 두 번째 인�
 <td>head -10</td>
 <td>처음 10줄 만 보여 준다.</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h2 id="-">마무리</h2>
 <p>웹 크롤링이나 고급 프로그래밍 언어를 사용하지 않아도 작은 명령어들을 함께 사용하여 웹 데이터를 가공할 수 있다.
 한번 만들어 놓으면 자주 사용할 수 있으며 시간순으로 저장하여 변화 과정을 추적할 수도 있다.
