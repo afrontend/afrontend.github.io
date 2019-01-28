@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/game/fp-tetris-game/static/js/runtime~main.46a9edeb.js"
   },
   {
-    "revision": "a772b65f1d94d85ff53a",
-    "url": "/game/fp-tetris-game/static/js/main.a772b65f.chunk.js"
+    "revision": "ce9e000776138dc68168",
+    "url": "/game/fp-tetris-game/static/js/main.ce9e0007.chunk.js"
   },
   {
     "revision": "83212498c3bf96ba60d5",
     "url": "/game/fp-tetris-game/static/js/1.83212498.chunk.js"
   },
   {
-    "revision": "a772b65f1d94d85ff53a",
+    "revision": "ce9e000776138dc68168",
     "url": "/game/fp-tetris-game/static/css/main.a43edd1c.chunk.css"
   },
   {
-    "revision": "22d4e7ae0b29682a1c079e554fe3bf97",
+    "revision": "73b527f48204cb3d0dbbeccde39472cc",
     "url": "/game/fp-tetris-game/index.html"
   }
 ];
