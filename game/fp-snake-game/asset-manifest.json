@@ -1,13 +1,13 @@
 {
   "main.css": "/game/fp-snake-game/static/css/main.ab50c3c7.chunk.css",
-  "main.js": "/game/fp-snake-game/static/js/main.aa23101e.chunk.js",
-  "main.js.map": "/game/fp-snake-game/static/js/main.aa23101e.chunk.js.map",
+  "main.js": "/game/fp-snake-game/static/js/main.2fcd343c.chunk.js",
+  "main.js.map": "/game/fp-snake-game/static/js/main.2fcd343c.chunk.js.map",
   "static/js/1.83212498.chunk.js": "/game/fp-snake-game/static/js/1.83212498.chunk.js",
   "static/js/1.83212498.chunk.js.map": "/game/fp-snake-game/static/js/1.83212498.chunk.js.map",
   "runtime~main.js": "/game/fp-snake-game/static/js/runtime~main.303a5e8a.js",
   "runtime~main.js.map": "/game/fp-snake-game/static/js/runtime~main.303a5e8a.js.map",
   "static/css/main.ab50c3c7.chunk.css.map": "/game/fp-snake-game/static/css/main.ab50c3c7.chunk.css.map",
   "index.html": "/game/fp-snake-game/index.html",
-  "precache-manifest.b9cb1a91c8b5d0d24103a8b993c098e3.js": "/game/fp-snake-game/precache-manifest.b9cb1a91c8b5d0d24103a8b993c098e3.js",
+  "precache-manifest.6d97260548e1d3b392f5ff5ff0823ec9.js": "/game/fp-snake-game/precache-manifest.6d97260548e1d3b392f5ff5ff0823ec9.js",
   "service-worker.js": "/game/fp-snake-game/service-worker.js"
 }
