@@ -1,13 +1,13 @@
 {
   "main.css": "/game/fp-maze-game/static/css/main.67a48c32.chunk.css",
-  "main.js": "/game/fp-maze-game/static/js/main.240fa45c.chunk.js",
-  "main.js.map": "/game/fp-maze-game/static/js/main.240fa45c.chunk.js.map",
-  "static/js/1.afee8250.chunk.js": "/game/fp-maze-game/static/js/1.afee8250.chunk.js",
-  "static/js/1.afee8250.chunk.js.map": "/game/fp-maze-game/static/js/1.afee8250.chunk.js.map",
+  "main.js": "/game/fp-maze-game/static/js/main.483bc477.chunk.js",
+  "main.js.map": "/game/fp-maze-game/static/js/main.483bc477.chunk.js.map",
+  "static/js/1.32c6a2c1.chunk.js": "/game/fp-maze-game/static/js/1.32c6a2c1.chunk.js",
+  "static/js/1.32c6a2c1.chunk.js.map": "/game/fp-maze-game/static/js/1.32c6a2c1.chunk.js.map",
   "runtime~main.js": "/game/fp-maze-game/static/js/runtime~main.41cc5114.js",
   "runtime~main.js.map": "/game/fp-maze-game/static/js/runtime~main.41cc5114.js.map",
   "static/css/main.67a48c32.chunk.css.map": "/game/fp-maze-game/static/css/main.67a48c32.chunk.css.map",
   "index.html": "/game/fp-maze-game/index.html",
-  "precache-manifest.364e58b11c92296d709fec0b982e7086.js": "/game/fp-maze-game/precache-manifest.364e58b11c92296d709fec0b982e7086.js",
+  "precache-manifest.21aba28dcb6fcaca2d022f78ae3fb4e8.js": "/game/fp-maze-game/precache-manifest.21aba28dcb6fcaca2d022f78ae3fb4e8.js",
   "service-worker.js": "/game/fp-maze-game/service-worker.js"
 }
