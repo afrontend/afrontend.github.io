@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/game/fp-snake-game/precache-manifest.353ae7896175f670cc806082379ac828.js"
+  "/game/fp-snake-game/precache-manifest.8036f3c4953508927e46064ea1cd714e.js"
 );
 
 workbox.clientsClaim();
