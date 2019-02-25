@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/game/fp-maze-game/precache-manifest.b4197870e43976641a7093001f193af6.js"
+  "/game/fp-maze-game/precache-manifest.de3a23800052e0acd9b28f152b2d3bca.js"
 );
 
 workbox.clientsClaim();
