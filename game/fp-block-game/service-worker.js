@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/game/fp-block-game/precache-manifest.32fa093d01a05d0eee2531674f6b65ae.js"
+  "/game/fp-block-game/precache-manifest.0833ac9bb18d92ca15ad6b03889fcc7d.js"
 );
 
 workbox.clientsClaim();
