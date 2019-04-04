@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/game/fp-block-game/static/js/main.b7b47a86.chunk.js"
   },
   {
-    "revision": "a95a299461d6a5536114",
-    "url": "/game/fp-block-game/static/js/2.ca63c965.chunk.js"
+    "revision": "76d1873482c417807c44",
+    "url": "/game/fp-block-game/static/js/2.43257adf.chunk.js"
   },
   {
     "revision": "c000c04bfaf25b89f92b",
     "url": "/game/fp-block-game/static/css/main.5ff81c1f.chunk.css"
   },
   {
-    "revision": "f353c358721cbc0864eb8ee1cff8591a",
+    "revision": "d70c5ea500591de04146239a157975f9",
     "url": "/game/fp-block-game/index.html"
   }
 ];
