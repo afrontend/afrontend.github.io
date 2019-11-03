@@ -495,7 +495,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
   e.Modernizr = Modernizr;
 }(window, document);
-},{}],"../../../.nvm/versions/node/v8.10.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../.nvm/versions/node/v10.10.0/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -523,7 +523,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45867" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42423" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -554,8 +554,9 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else {
-        window.location.reload();
+      } else if (location.reload) {
+        // `location` global exists in a web worker context but lacks `.reload()` function.
+        location.reload();
       }
     }
 
@@ -698,5 +699,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.nvm/versions/node/v8.10.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/vendor/modernizr-3.7.1.min.js"], null)
+},{}]},{},["../../../.nvm/versions/node/v10.10.0/lib/node_modules/parcel/src/builtins/hmr-runtime.js","src/vendor/modernizr-3.7.1.min.js"], null)
 //# sourceMappingURL=/modernizr-3.7.1.min.3dfa3b02.js.map
