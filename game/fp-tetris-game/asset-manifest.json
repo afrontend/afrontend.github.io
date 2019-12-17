@@ -1,13 +1,13 @@
 {
-  "main.css": "/game/fp-tetris-game/static/css/main.e4fc77f5.chunk.css",
-  "main.js": "/game/fp-tetris-game/static/js/main.a5bdd559.chunk.js",
-  "main.js.map": "/game/fp-tetris-game/static/js/main.a5bdd559.chunk.js.map",
-  "static/js/1.f24693e3.chunk.js": "/game/fp-tetris-game/static/js/1.f24693e3.chunk.js",
-  "static/js/1.f24693e3.chunk.js.map": "/game/fp-tetris-game/static/js/1.f24693e3.chunk.js.map",
+  "main.css": "/game/fp-tetris-game/static/css/main.c49e6a1e.chunk.css",
+  "main.js": "/game/fp-tetris-game/static/js/main.40cc6326.chunk.js",
+  "main.js.map": "/game/fp-tetris-game/static/js/main.40cc6326.chunk.js.map",
+  "static/js/1.e77fbb4d.chunk.js": "/game/fp-tetris-game/static/js/1.e77fbb4d.chunk.js",
+  "static/js/1.e77fbb4d.chunk.js.map": "/game/fp-tetris-game/static/js/1.e77fbb4d.chunk.js.map",
   "runtime~main.js": "/game/fp-tetris-game/static/js/runtime~main.46a9edeb.js",
   "runtime~main.js.map": "/game/fp-tetris-game/static/js/runtime~main.46a9edeb.js.map",
-  "static/css/main.e4fc77f5.chunk.css.map": "/game/fp-tetris-game/static/css/main.e4fc77f5.chunk.css.map",
+  "static/css/main.c49e6a1e.chunk.css.map": "/game/fp-tetris-game/static/css/main.c49e6a1e.chunk.css.map",
   "index.html": "/game/fp-tetris-game/index.html",
-  "precache-manifest.1cd132a0c96b7d3fa432403ddd4e8250.js": "/game/fp-tetris-game/precache-manifest.1cd132a0c96b7d3fa432403ddd4e8250.js",
+  "precache-manifest.627989ad8e86e82ffa5c82a04e3d4108.js": "/game/fp-tetris-game/precache-manifest.627989ad8e86e82ffa5c82a04e3d4108.js",
   "service-worker.js": "/game/fp-tetris-game/service-worker.js"
 }
