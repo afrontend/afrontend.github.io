@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="/bulma.ab682856.css">
 
   <meta name="theme-color" content="#fafafa">
+  <style>.container {
+      width: 600px;
+    }</style>
 <script src="/bulma.ab682856.js"></script><link rel="stylesheet" href="/main.1e43358e.css"></head>
 
 <body>
@@ -43,394 +46,349 @@
         <h2 class="subtitle">
           자바스크립트로 작은 프로그램 만들기
         </h2>
-      </div>
-    </div>
-    <div class="tabs">
-      <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-          <li><a href="https://agvim.wordpress.com" alt="블로그" title="블로그">Blog</a></li>
-          <li><a href="https://github.com/afrontend" alt="GitHub" title="GitHub">GitHub</a></li>
-          <li><a href="https://medium.com/@afrontend" alt="Medium" title="Medium">Medium</a></li>
-          <li><a href="https://leetcode.com/afrontend/" alt="Medium" title="LeetCode">LeetCode</a></li>
+          <li><a href="https://agvim.wordpress.com" title="블로그">Blog</a></li>
+          <li><a href="https://github.com/afrontend" title="GitHub">GitHub</a></li>
+          <li><a href="https://medium.com/@afrontend" title="Medium">Medium</a></li>
+          <li><a href="https://leetcode.com/afrontend" title="LeetCode">LeetCode</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
   </section>
 
   <div class="section">
     <div class="container">
-      <div class="columns">
-        <div class="column">
-          함수형 프로그래밍을 좋아해서 연습용으로 작은 게임을 (<a href="https://github.com/afrontend/fp-tetris-game">테트리스</a>, <a href="https://github.com/afrontend/fp-snake-game">뱀</a>, <a href="https://github.com/afrontend/fp-block-game">블락</a>) 만들고 있다. 이 게임들은 각각 터미널 버전도 있으며 공통 <a href="https://github.com/afrontend/fp-panel">라이브러리</a>를 사용한다. 키보드로 프로그램을 실행을 하는 것을 좋아해서 <a href="https://github.com/trapd00r/ratmenu">ratmenu</a>를 <a href="https://github.com/afrontend/ratmenu">수정</a>해서 사용하고 있다. ratmenu의 터미널 버전인 <a href="https://github.com/afrontend/xmenu">xmenu</a>와 일렉트론 버전인 <a href="https://github.com/afrontend/fp-menu">fp-menu</a>를 만들고 있다. 도서관에서 책 빌릴 수 있는지 알아보는 <a href="https://github.com/afrontend/dongnelibrary">dongnelibrary</a>도 만들어 사용하고 있다. 간단한 로그 분석 <a href="https://github.com/afrontend/logtimer">툴</a>도 만들고 있다.
+      작은 게임을 (<a href="https://github.com/afrontend/fp-tetris-game">테트리스</a>, <a href="https://github.com/afrontend/fp-snake-game">뱀</a>, <a href="https://github.com/afrontend/fp-block-game">블락</a>) 만들고 있다. 각각 터미널 버전도 있으며 공통 <a href="https://github.com/afrontend/fp-panel">라이브러리</a>를 사용한다. 키보드로 프로그램을 실행을 하는 것을 좋아해서 <a href="https://github.com/trapd00r/ratmenu">ratmenu</a>를 <a href="https://github.com/afrontend/ratmenu">수정</a>해서 사용하고 있다. ratmenu의 터미널 버전인 <a href="https://github.com/afrontend/xmenu">xmenu</a>와 일렉트론 버전인 <a href="https://github.com/afrontend/fp-menu">fp-menu</a>를 만들고 있다. 도서관에서 책 빌릴 수 있는지 알아보는 <a href="https://github.com/afrontend/dongnelibrary">dongnelibrary</a>도 만들어 사용하고 있다. 간단한 로그 시간 분석 <a href="https://github.com/afrontend/logtimer">툴</a>도 만들고 있다.
+
+      <div class="box">
+        <strong>한글 초성 검색</strong> 이보다 짧은 코드는 없다. 38줄.
+        <div>
+          <a class="tag" href="https://agvim.wordpress.com/2020/05/11/check-a-string-if-jamo-is-exist/">Blog</a>
+          <a class="tag" href="https://github.com/afrontend/includes-jamo">GitHub</a>
         </div>
       </div>
 
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            한글 초성 검색, 이보다 짧은 코드는 없다. 38줄.
-            <div>
-              <a class="tag" href="https://agvim.wordpress.com/2020/05/11/check-a-string-if-jamo-is-exist/">Blog</a>
-              <a class="tag" href="https://github.com/afrontend/includes-jamo">GitHub</a>
+      <div class="box">
+        <strong>다국어 파일을 쉽게 편집하는데 CSV 파일을 사용할 수 있다.</strong> CSV 파일을 JSON으로 변환하고 그 반대도 가능하다.
+        <div>
+          <a class="tag" href="https://agvim.wordpress.com/2020/05/10/use-csv-file-for-i18n/">Blog</a>
+          <a class="tag" href="https://github.com/afrontend/csv-property">GitHub</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-128x64">
+              <a href="https://afrontend.github.io/menu-guide">
+                <img src="https://agvim.files.wordpress.com/2019/12/menu-guide.png?w=128" alt="Image">
+              </a>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>이거요</strong>
+              <br>
+              커피나 점심 메뉴를 정리할 때 사용할 수 있다. 작은 화면에서 보아야 좋다.
+              <br>
+              <a class="tag" href="https://afrontend.github.io/game/menu-guide">Preview</a>
+              <a class="tag" href="https://github.com/afrontend/menu-guide">GitHub</a>
+              </p>
             </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            다국어 파일을 쉽게 편집하는데 CSV 파일을 사용할 수 있다. CSV 파일을 JSON으로 변환하고 그 반대도 가능하다.
-            <div>
-              <a class="tag" href="https://agvim.wordpress.com/2020/05/10/use-csv-file-for-i18n/">Blog</a>
-              <a class="tag" href="https://github.com/afrontend/csv-property">GitHub</a>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <a href="https://js13kgames.com/entries/angle">
+                <img src="https://agvim.files.wordpress.com/2019/11/angle-1.png" alt="Image">
+              </a>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>잡초 제거</strong>
+              <br>
+              아래에서 올라오는 잡초를 미사일을 사용해서 제거한다.
+              <br>
+              <a class="tag" href="https://js13kgames.com/entries/angle">Play</a>
+              <a class="tag" href="https://github.com/afrontend/angle">GitHub</a>
+              </p>
             </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-128x64">
-                  <a href="https://afrontend.github.io/menu-guide">
-                    <img src="https://agvim.files.wordpress.com/2019/12/menu-guide.png?w=128" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>이거요</strong>
-                  <br>
-                  커피나 점심 메뉴를 정리할 때 사용할 수 있다. 작은 화면에서 보아야 좋다.
-                  <br>
-                  <a class="tag" href="https://afrontend.github.io/game/menu-guide">Preview</a>
-                  <a class="tag" href="https://github.com/afrontend/menu-guide">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
+        </article>
       </div>
 
-      <div class="columns">
-        <div class="column is-half">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-256x256">
-                  <p class="codepen" data-height="256" data-theme-id="0" data-default-tab="result" data-user="afrontend" data-slug-hash="MWgjeeq" style="height: 256px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="small game">
-                  <span>See the Pen <a href="https://codepen.io/afrontend/pen/MWgjeeq/">
-                      small game</a> by Bob Hwang (<a href="https://codepen.io/afrontend">@afrontend</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </span>
-                  </p>
-                  <script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>작은 게임</strong>
-                  <br>
-                  캔바스를 사용하는 작은 게임을 만들고 있다.
-                  <br>
-                  <a class="tag" href="https://codepen.io/afrontend/pen/jjeEjp">Preview</a>
-                  <a class="tag" href="https://github.com/afrontend/smallgame">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-256x256">
+              <p class="codepen" data-height="256" data-theme-id="0" data-default-tab="result" data-user="afrontend" data-slug-hash="MWgjeeq" style="height: 256px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="small game">
+              <span>See the Pen <a href="https://codepen.io/afrontend/pen/MWgjeeq/">
+                  small game</a> by Bob Hwang (<a href="https://codepen.io/afrontend">@afrontend</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </span>
+              </p>
+              <script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </figure>
           </div>
-        </div>
-
-      <!--
-         - </div>
-         - <div class="columns">
-         -->
-
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <a href="https://js13kgames.com/entries/angle">
-                    <img src="https://agvim.files.wordpress.com/2019/11/angle-1.png" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>잡초 제거</strong>
-                  <br>
-                  아래에서 올라오는 잡초를 미사일을 사용해서 제거한다.
-                  <br>
-                  <a class="tag" href="https://js13kgames.com/entries/angle">Play</a>
-                  <a class="tag" href="https://github.com/afrontend/angle">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>작은 게임</strong>
+              <br>
+              캔바스를 사용하는 작은 게임을 만들고 있다.
+              <br>
+              <a class="tag" href="https://codepen.io/afrontend/pen/jjeEjp">Preview</a>
+              <a class="tag" href="https://github.com/afrontend/smallgame">GitHub</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <a href="https://afrontend.github.io/game/fp-maze-game">
-                    <img src="https://agvim.files.wordpress.com/2019/02/fp-maze-game.png?w=128" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>미로</strong>
-                  <br>
-                  화면 다시 읽기를 하면 미로를 새롭게 생성한다. 'S'에서 시작해서 'E'로 가는 경로를 찾는다.
-                  <br>
-                  <a class="tag" href="https://afrontend.github.io/game/fp-maze-game">Preview</a>
-                  <a class="tag" href="https://agvim.wordpress.com/2019/02/24/maze-game-with-javascript/">Blog</a>
-                  <a class="tag" href="https://github.com/afrontend/fp-maze-game">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
+        </article>
       </div>
 
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <a href="https://afrontend.github.io/game/fp-block-game">
-                    <img src="https://agvim.files.wordpress.com/2019/03/fp-block-game.png?w=128" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>블락</strong>
-                  <br>
-                  위에서 아래로 떨어지는 블락을 미사일로 맞추는 게임이다. React를 사용한다. 하나의 블락만 떨어진다. 화살표 키를 사용한다.
-                  <br>
-                  <a class="tag" href="https://afrontend.github.io/game/fp-block-game">Play</a>
-                  <a class="tag" href="https://agvim.wordpress.com/2019/03/25/block-game-with-javascript/">Blog</a>
-                  <a class="tag" href="https://github.com/afrontend/fp-block-game">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <a href="https://afrontend.github.io/game/fp-maze-game">
+                <img src="https://agvim.files.wordpress.com/2019/02/fp-maze-game.png?w=128" alt="Image">
+              </a>
+            </figure>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <a href="https://afrontend.github.io/game/fp-snake-game">
-                    <img src="https://agvim.files.wordpress.com/2019/01/fp-snake-game.png?w=128" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>뱀</strong>
-                  <br>
-                  짧은 길이의 뱀이 사과를 먹으면 점점 길어지는 게임이다. 벽에 부딪혀도 죽지 않는다. React를 사용했다. 화살표 키를 사용한다.
-                  <br>
-                  <a class="tag" href="https://afrontend.github.io/game/fp-snake-game">Play</a>
-                  <a class="tag" href="https://agvim.wordpress.com/2019/01/22/snake-game-with-javascript/">Blog</a>
-                  <a class="tag" href="https://github.com/afrontend/fp-snake-game">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>미로</strong>
+              <br>
+              화면 다시 읽기를 하면 미로를 새롭게 생성한다. 'S'에서 시작해서 'E'로 가는 경로를 찾는다.
+              <br>
+              <a class="tag" href="https://afrontend.github.io/game/fp-maze-game">Preview</a>
+              <a class="tag" href="https://agvim.wordpress.com/2019/02/24/maze-game-with-javascript/">Blog</a>
+              <a class="tag" href="https://github.com/afrontend/fp-maze-game">GitHub</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <a href="https://afrontend.github.io/game/fp-tetris-game">
-                    <img src="https://agvim.files.wordpress.com/2019/01/fp-tetris-game.png?w=128" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>테트리스</strong>
-                  <br>
-                  그 흔한 테트리스를 이제야 만들게 되었는데 함수형 프로그래밍 연습하겠다고 시작했다. 브라우저에서 확인 가능하다. 화살표 키를 사용한다.
-                  <br>
-                  <a class="tag" href="https://afrontend.github.io/game/fp-tetris-game">Play</a>
-                  <a class="tag" href="https://agvim.wordpress.com/2019/01/08/tetris-game-with-javascript/">Blog</a>
-                  <a class="tag" href="https://github.com/afrontend/fp-tetris-game">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
+        </article>
       </div>
 
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="https://agvim.files.wordpress.com/2019/03/fp-block.png?w=128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>터미널에서 블락</strong>
-                    <br>
-                    터미널에서 블락 게임을 할 수 있다. 떨어지는 블락을 미사일로 맞춘다. 웹에서 동작하는 블락 게임이 이 모듈을 사용한다. Node.js를 사용했고 화살표를 사용하면 된다.
-                    <br>
-                    <a class="tag" href="https://www.npmjs.com/package/fp-block">Npm</a>
-                    <a class="tag" href="https://github.com/afrontend/fp-block">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <a href="https://afrontend.github.io/game/fp-block-game">
+                <img src="https://agvim.files.wordpress.com/2019/03/fp-block-game.png?w=128" alt="Image">
+              </a>
+            </figure>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="https://agvim.files.wordpress.com/2019/03/fp-snake.png?w=128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>터미널에서 뱀</strong>
-                    <br>
-                    터미널에서 뱀 게임을 할 수 있다. 사과를 먹으면 뱀이 길어진다. 웹에서 동작하는 뱀 게임이 이 모듈을 사용한다. Node.js를 사용했고 화살표를 사용하면 된다.
-                    <br>
-                    <a class="tag" href="https://www.npmjs.com/package/fp-snake">Npm</a>
-                    <a class="tag" href="https://github.com/afrontend/fp-snake">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>블락</strong>
+              <br>
+              위에서 아래로 떨어지는 블락을 미사일로 맞추는 게임이다. React를 사용한다. 하나의 블락만 떨어진다. 화살표 키를 사용한다.
+              <br>
+              <a class="tag" href="https://afrontend.github.io/game/fp-block-game">Play</a>
+              <a class="tag" href="https://agvim.wordpress.com/2019/03/25/block-game-with-javascript/">Blog</a>
+              <a class="tag" href="https://github.com/afrontend/fp-block-game">GitHub</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <img src="https://agvim.files.wordpress.com/2019/03/fp-tetris.png?w=128" alt="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>터미널에서 테트리스</strong>
-                    <br>
-                    터미널에서 테트리스 게임을 할 수 있다. 웹에서 동작하는 테트리스 게임이 이 모듈을 사용한다. Node.js를 사용했고 화살표를 사용하면 된다.
-                    <br>
-                    <a class="tag" href="https://www.npmjs.com/package/fp-tetris">Npm</a>
-                    <a class="tag" href="https://github.com/afrontend/fp-tetris">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
+        </article>
       </div>
 
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <a href="https://afrontend.github.io/game/fp-snake-game">
+                <img src="https://agvim.files.wordpress.com/2019/01/fp-snake-game.png?w=128" alt="Image">
+              </a>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>뱀</strong>
+              <br>
+              짧은 길이의 뱀이 사과를 먹으면 점점 길어지는 게임이다. 벽에 부딪혀도 죽지 않는다. React를 사용했다. 화살표 키를 사용한다.
+              <br>
+              <a class="tag" href="https://afrontend.github.io/game/fp-snake-game">Play</a>
+              <a class="tag" href="https://agvim.wordpress.com/2019/01/22/snake-game-with-javascript/">Blog</a>
+              <a class="tag" href="https://github.com/afrontend/fp-snake-game">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
 
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <a href="https://dongne.herokuapp.com/">
-                    <img src="https://agvim.files.wordpress.com/2017/07/dongne23.png?w=128" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>이 책을 빌릴 수 있을까? 1</strong>
-                  <br>
-                  동네 도서관에서 책을 빌릴 수 있는지 확인할 수 있다. AngularJS를 사용했다.
-                  <br>
-                  <a class="tag" href="https://dongne.herokuapp.com/">Preview</a>
-                  <a class="tag" href="https://github.com/afrontend/dongnelibraryspa">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <a href="https://afrontend.github.io/game/fp-tetris-game">
+                <img src="https://agvim.files.wordpress.com/2019/01/fp-tetris-game.png?w=128" alt="Image">
+              </a>
+            </figure>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <a href="https://dlserver.herokuapp.com/app/">
-                    <img src="https://agvim.files.wordpress.com/2019/06/dlserver.png?w=128" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>이 책을 빌릴 수 있을까? 2</strong>
-                  <br>
-                  동네 도서관에서 책을 빌릴 수 있는지 확인할 수 있다. AngularJS와 React를 같이 사용했다.
-                  <br>
-                  <a class="tag" href="https://dlserver.herokuapp.com/app/">Preview</a>
-                  <a class="tag" href="https://agvim.wordpress.com/2019/02/08/dongnelibrary_with_bulma/">Blog</a>
-                  <a class="tag" href="https://github.com/afrontend/dlserver">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>테트리스</strong>
+              <br>
+              그 흔한 테트리스를 이제야 만들게 되었는데 함수형 프로그래밍 연습하겠다고 시작했다. 브라우저에서 확인 가능하다. 화살표 키를 사용한다.
+              <br>
+              <a class="tag" href="https://afrontend.github.io/game/fp-tetris-game">Play</a>
+              <a class="tag" href="https://agvim.wordpress.com/2019/01/08/tetris-game-with-javascript/">Blog</a>
+              <a class="tag" href="https://github.com/afrontend/fp-tetris-game">GitHub</a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <article class="media">
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <a href="https://asciinema.org/a/E7Rjmrp78RxOno0eHSr7s1D5p">
-                    <img src="https://asciinema.org/a/E7Rjmrp78RxOno0eHSr7s1D5p.svg?w=128" alt="Image">
-                  </a>
-                </figure>
-              </div>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                  <strong>터미널에서 책 찾기</strong>
-                  <br>
-                  도서관 이름과 책 이름을 입력하면 빌릴 수 있는지 알려준다. Node.js를 사용했고 도서관에서 웹 정보를 읽어온다. 크롤링한다.
-                  <br>
-                  <a class="tag" href="https://asciinema.org/a/E7Rjmrp78RxOno0eHSr7s1D5p">Preview</a>
-                  <a class="tag" href="https://github.com/afrontend/dongnelibrary">GitHub</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://agvim.files.wordpress.com/2019/03/fp-block.png?w=128" alt="Image">
+            </figure>
           </div>
-        </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>터미널에서 블락</strong>
+              <br>
+              터미널에서 블락 게임을 할 수 있다. 떨어지는 블락을 미사일로 맞춘다. 웹에서 동작하는 블락 게임이 이 모듈을 사용한다. Node.js를 사용했고 화살표를 사용하면 된다.
+              <br>
+              <a class="tag" href="https://www.npmjs.com/package/fp-block">Npm</a>
+              <a class="tag" href="https://github.com/afrontend/fp-block">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://agvim.files.wordpress.com/2019/03/fp-snake.png?w=128" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>터미널에서 뱀</strong>
+              <br>
+              터미널에서 뱀 게임을 할 수 있다. 사과를 먹으면 뱀이 길어진다. 웹에서 동작하는 뱀 게임이 이 모듈을 사용한다. Node.js를 사용했고 화살표를 사용하면 된다.
+              <br>
+              <a class="tag" href="https://www.npmjs.com/package/fp-snake">Npm</a>
+              <a class="tag" href="https://github.com/afrontend/fp-snake">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://agvim.files.wordpress.com/2019/03/fp-tetris.png?w=128" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>터미널에서 테트리스</strong>
+              <br>
+              터미널에서 테트리스 게임을 할 수 있다. 웹에서 동작하는 테트리스 게임이 이 모듈을 사용한다. Node.js를 사용했고 화살표를 사용하면 된다.
+              <br>
+              <a class="tag" href="https://www.npmjs.com/package/fp-tetris">Npm</a>
+              <a class="tag" href="https://github.com/afrontend/fp-tetris">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <a href="https://dongne.herokuapp.com/">
+                <img src="https://agvim.files.wordpress.com/2017/07/dongne23.png?w=128" alt="Image">
+              </a>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>이 책을 빌릴 수 있을까? 1</strong>
+              <br>
+              동네 도서관에서 책을 빌릴 수 있는지 확인할 수 있다. AngularJS를 사용했다.
+              <br>
+              <a class="tag" href="https://dongne.herokuapp.com/">Preview</a>
+              <a class="tag" href="https://github.com/afrontend/dongnelibraryspa">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <a href="https://dlserver.herokuapp.com/app/">
+                <img src="https://agvim.files.wordpress.com/2019/06/dlserver.png?w=128" alt="Image">
+              </a>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>이 책을 빌릴 수 있을까? 2</strong>
+              <br>
+              동네 도서관에서 책을 빌릴 수 있는지 확인할 수 있다. AngularJS와 React를 같이 사용했다.
+              <br>
+              <a class="tag" href="https://dlserver.herokuapp.com/app/">Preview</a>
+              <a class="tag" href="https://agvim.wordpress.com/2019/02/08/dongnelibrary_with_bulma/">Blog</a>
+              <a class="tag" href="https://github.com/afrontend/dlserver">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <a href="https://asciinema.org/a/E7Rjmrp78RxOno0eHSr7s1D5p">
+                <img src="https://asciinema.org/a/E7Rjmrp78RxOno0eHSr7s1D5p.svg?w=128" alt="Image">
+              </a>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              <strong>터미널에서 책 찾기</strong>
+              <br>
+              도서관 이름과 책 이름을 입력하면 빌릴 수 있는지 알려준다. Node.js를 사용했고 도서관에서 웹 정보를 읽어온다. 크롤링한다.
+              <br>
+              <a class="tag" href="https://asciinema.org/a/E7Rjmrp78RxOno0eHSr7s1D5p">Preview</a>
+              <a class="tag" href="https://github.com/afrontend/dongnelibrary">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
 
     </div>
