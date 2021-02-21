@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/vendor/modernizr-3.7.1.min.js":[function(require,module,exports) {
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /*! modernizr 3.7.1 (Custom Build) | MIT *
  * https://modernizr.com/download/?-cssanimations-csscolumns-customelements-flexbox-history-picture-pointerevents-postmessage-sizes-srcset-webgl-websockets-webworkers-addtest-domprefixes-hasevent-mq-prefixedcssvalue-prefixes-setclasses-testallprops-testprop-teststyles !*/
@@ -469,7 +469,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         t,
         n,
         r = s("img"),
-        o = "sizes" in r;
+        o = ("sizes" in r);
     !o && "srcset" in r ? (t = "data:image/gif;base64,R0lGODlhAgABAPAAAP///wAAACH5BAAAAAAALAAAAAACAAEAAAICBAoAOw==", e = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==", n = function n() {
       i("sizes", 2 === r.width);
     }, r.onload = n, r.onerror = n, r.setAttribute("sizes", "9px"), r.srcset = e + " 1w," + t + " 8w", r.src = e) : i("sizes", o);
@@ -495,7 +495,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
   e.Modernizr = Modernizr;
 }(window, document);
-},{}],"../../../.nvm/versions/node/v10.10.0/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../.nvm/versions/node/v14.0.0/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -523,7 +523,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45789" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35941" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -699,5 +699,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.nvm/versions/node/v10.10.0/lib/node_modules/parcel/src/builtins/hmr-runtime.js","src/vendor/modernizr-3.7.1.min.js"], null)
+},{}]},{},["../../../.nvm/versions/node/v14.0.0/lib/node_modules/parcel/src/builtins/hmr-runtime.js","src/vendor/modernizr-3.7.1.min.js"], null)
 //# sourceMappingURL=/modernizr-3.7.1.min.3dfa3b02.js.map

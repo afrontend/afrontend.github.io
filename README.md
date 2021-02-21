@@ -1,1 +1,2 @@
-[위쿨리](https://agvim.wordpress.com/)
+[위쿨리](https://afrontend.github.io/)
+
