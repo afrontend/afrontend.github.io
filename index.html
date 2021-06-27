@@ -32,6 +32,15 @@
       min-width: 400px;
       max-width: 800px;
     }
+
+    @media only screen and (max-width: 480px) {
+      .container {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+
     .description {
       margin-bottom: 2rem;
     }
@@ -74,13 +83,16 @@
         <h2 class="subtitle">
           자바스크립트로 작은 프로그램 만들기
         </h2>
-        <ul>
-          <li class="button"><a href="https://agvim.wordpress.com" title="블로그">Blog</a></li>
-          <li class="button"><a href="https://github.com/afrontend" title="GitHub">GitHub</a></li>
-          <li class="button"><a href="https://afrontend.medium.com" title="Medium">Medium</a></li>
-          <li class="button"><a href="https://leetcode.com/afrontend" title="LeetCode">LeetCode</a></li>
-          <li class="button"><a href="https://asciinema.org/~afrontend" title="asciinema">asciinema</a></li>
-        </ul>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul>
+            <li class=""><a href="https://agvim.wordpress.com" title="블로그">Blog</a></li>
+            <li class=""><a href="https://github.com/afrontend" title="GitHub">GitHub</a></li>
+            <li class=""><a href="https://afrontend.medium.com" title="Medium">Medium</a></li>
+            <li class=""><a href="https://leetcode.com/afrontend" title="LeetCode">LeetCode</a></li>
+            <li class=""><a href="https://asciinema.org/~afrontend" title="asciinema">asciinema</a></li>
+            <li class=""><a href="https://codepen.io/afrontend" title="codepen">codepen</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </section>
@@ -156,6 +168,8 @@
           <strong>다국어 파일을 쉽게 편집하는데 CSV 파일을 사용할 수 있다.</strong> CSV 파일을 JSON으로 변환하고 그 반대도 가능하다.
           <a class="button" href="https://agvim.wordpress.com/2020/05/10/use-csv-file-for-i18n/">Blog</a>
           <a class="button" href="https://github.com/afrontend/csv-property">GitHub</a>
+          <a class="button" href="https://afrontend.github.io/localtext/">Demo</a>
+          <a class="button" href="https://github.com/afrontend/localtext">Demo GitHub</a>
         </div>
         <div>
         </div>
